@@ -34,6 +34,15 @@ Run lint and typecheck before declaring any task done.
 Use EAS to build, sign, and submit the app in the cloud (`eas build`, `eas submit`) and to ship over-the-air updates (`eas update`) — no local Xcode or Android Studio required. Run EAS CLI as `bunx eas-cli <command>` in Bun projects, or `npx eas-cli@latest <command>` otherwise; substitute that for bare `eas` in docs examples.
 Docs: https://docs.expo.dev/eas/index.md
 
+## E2E tests
+
+Tests live in `tests/*.e2e.ts`. Structure every test as Arrange, Act, Assert, with a blank line between the three blocks. This takes precedence over the e2e skill's advice to pin each `agent.act` outcome right after it.
+
+- **Arrange:** reach the starting screen and state, in `beforeEach` when tests share it. An `expect` here only guards a precondition (the screen opened, the seed value is shown), so a failure reads as "the setup broke", not "the feature broke".
+- **Act:** the behavior under test. Extra `agent.act` steps that only bring the result into view (e.g. opening the Library after saving an episode) belong here, with no assertions in between.
+- **Assert:** every assertion goes at the end. Multiple assertions are fine when they verify the same outcome.
+- **One thing per test:** a test checks a single outcome, and its title names that outcome, so a failing title says what broke without opening the test. When a flow has two outcomes worth checking (e.g. the Saved state on the episode page and the episode listed in the Library), write two tests.
+
 ## Rules
 
 - If `ios/` and `android/` directories do not exist, they are generated (Continuous Native Generation). Never create or edit them by hand — configure native behavior in `app.json` and config plugins.
