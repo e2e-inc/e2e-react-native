@@ -43,6 +43,9 @@ export const type = {
   micro: { fontSize: 11, fontWeight: '700' as const, color: colors.textTertiary, letterSpacing: 0.8 },
 };
 
-/** Height of the Material 3 navigation bar that native tabs render on Android, without the system inset. */
-export const ANDROID_TAB_BAR_HEIGHT = 80;
+/**
+ * Height of the Material 3 navigation bar that native tabs render on Android, without the system inset,
+ * and of the web tab bar in `(tabs)/_layout.web.tsx`.
+ */
+export const TAB_BAR_HEIGHT = 80;
 export const MINI_PLAYER_HEIGHT = 64;

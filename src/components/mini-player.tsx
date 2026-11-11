@@ -9,9 +9,11 @@ import { Artwork, IconButton, ProgressBar } from '@/components/ui';
 import { episodeById, showById } from '@/data/podcasts';
 import { useLibrary } from '@/store/library';
 import { useEpisodeProgress, usePlayer } from '@/store/player';
-import { ANDROID_TAB_BAR_HEIGHT, colors, MINI_PLAYER_HEIGHT, radius } from '@/theme';
+import { TAB_BAR_HEIGHT, colors, MINI_PLAYER_HEIGHT, radius } from '@/theme';
 
 const HIDDEN_ON = ['player', 'queue'];
+// Form sheets cover the mini player natively, but open as full pages on web.
+const SHEETS = ['share', 'add-to-playlist', 'new-playlist', 'review', 'sleep-timer'];
 
 /** Mini player for the iOS tab bar's bottom accessory, drawn on the system's Liquid Glass. */
 export function MiniPlayerAccessory() {
@@ -23,7 +25,7 @@ export function MiniPlayerAccessory() {
 
 /**
  * Floating mini player for screens without the iOS bottom accessory:
- * every pushed screen, and the tab screens on Android.
+ * every pushed screen, and the tab screens on Android and web.
  */
 export function MiniPlayer() {
   const { currentId } = usePlayer();
@@ -33,8 +35,9 @@ export function MiniPlayer() {
   const inTabs = first === '(tabs)';
   if (!currentId || (first && HIDDEN_ON.includes(first))) return null;
   if (inTabs && Platform.OS === 'ios') return null;
+  if (first && Platform.OS === 'web' && SHEETS.includes(first)) return null;
 
-  const bottom = insets.bottom + (inTabs ? ANDROID_TAB_BAR_HEIGHT : 0) + 8;
+  const bottom = insets.bottom + (inTabs ? TAB_BAR_HEIGHT : 0) + 8;
   return (
     <View style={[styles.floating, { bottom }]} pointerEvents="box-none">
       <View style={styles.card}>

@@ -23,7 +23,7 @@
       "package": "dev.e2e.podcasts"
     },
     "web": {
-      "output": "server",
+      "output": "single",
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [

@@ -89,7 +89,7 @@ export default function SearchScreen() {
           </>
         )}
 
-        {term && showResults.length === 0 && episodeResults.length === 0 && (
+        {term.length > 0 && showResults.length === 0 && episodeResults.length === 0 && (
           <EmptyState icon={SearchX} title="No results" message={`Nothing matches “${query.trim()}”. Try another show or topic.`} />
         )}
 
