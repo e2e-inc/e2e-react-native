@@ -10,7 +10,7 @@ describe('settings', () => {
   test('change the skip forward interval', async ({ agent, screen }) => {
     await agent.act('set skip forward to {seconds} seconds', { params: { seconds: 45 } });
 
-    await expect(screen.getByLabel('Skip forward').getByRole('button', '45s')).toBeSelected();
+    await expect(screen.getByRole('button', '45s')).toBeSelected();
     await expect(screen.getByRole('button', 'Skip forward 45 seconds')).toBeVisible();
   });
 
