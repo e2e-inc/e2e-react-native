@@ -53,12 +53,6 @@ describe('episode page', () => {
     await expect(screen.getByRole('button', 'Remove Listening for Life on Europa from queue')).toBeVisible();
   });
 
-  test('add an episode to a playlist', async ({ agent, screen }) => {
-    await agent.act('tick Morning commute in the Add to playlist sheet, and leave the sheet open');
-
-    await expect(screen.getByRole('checkbox', 'Morning commute')).toBeChecked();
-  });
-
   test('find an episode in the playlist it was added to', async ({ agent, screen }) => {
     await agent.act('tick Morning commute in the Add to playlist sheet, and leave the sheet open');
     await agent.act('open the Morning commute playlist from the Library');

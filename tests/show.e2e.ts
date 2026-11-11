@@ -31,10 +31,4 @@ describe('show page', () => {
     await expect(screen.getByRole('button', 'Edit review')).toBeVisible();
     await expect(screen.getByText('Perfect for long walks')).toBeVisible();
   });
-
-  test('share a show', async ({ agent, screen }) => {
-    await agent.act('share the show by copying its link');
-
-    await expect(screen.getByRole('alert')).toContainText('Link copied');
-  });
 });

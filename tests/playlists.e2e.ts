@@ -5,14 +5,6 @@ describe('playlists', () => {
     await app.open();
   });
 
-  test('create a playlist', async ({ agent }) => {
-    await agent.act('create a new playlist named {name} from the Library', { params: { name: 'Road trip' } });
-
-    await agent.assert('a playlist named {name} was created: a confirmation names it, or your playlists list it', {
-      params: { name: 'Road trip' },
-    });
-  });
-
   test('find a created playlist in your playlists', async ({ agent, screen }) => {
     await agent.act('create a new playlist named {name} from the Library', { params: { name: 'Road trip' } });
     await agent.act('show your playlists');

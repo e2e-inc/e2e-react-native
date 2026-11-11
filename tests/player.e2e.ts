@@ -7,12 +7,6 @@ describe('full player', () => {
     await expect(screen.getByTestId('player-title')).toHaveText('The Agents Are Coming for Your Test Suite');
   });
 
-  test('start playback', async ({ agent, screen }) => {
-    await agent.act('start playback');
-
-    await expect(screen.getByTestId('player-toggle')).toHaveAccessibleName('Pause');
-  });
-
   test('pause playback', async ({ agent, screen }) => {
     await agent.act('start playback');
     await expect(screen.getByTestId('player-toggle')).toHaveAccessibleName('Pause');
