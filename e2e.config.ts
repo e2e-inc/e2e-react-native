@@ -49,6 +49,9 @@ export default {
       // A debug build made with `npx expo run:android`; it loads the bundle from Metro on the host (10.0.2.2:8081 on an emulator).
       app: {
         bundleId: 'dev.e2e.podcasts',
+        // An unused intent extra: with launch arguments, agent-device launches through `am start` and accepts a cold start
+        // slower than `am start -W`'s ~10 s wait, which its default launch helper reports as "could not launch the application".
+        launchArguments: ['--ez', 'e2e', 'true'],
         command: metro,
         readyUrl: 'http://localhost:8081/status',
       },

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T11:11:34.270Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Pause\" in \"The Agents Are Coming for Your Test Sui…\"",
+        "target": {
+          "role": "button",
+          "name": "Pause",
+          "testId": "player-toggle",
+          "selector": "id=player-toggle",
+          "within": "The Agents Are Coming for Your Test Suite"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/player.e2e.ts::full%20player::pause%20playback",
+      "targetId": "android",
+      "instructionDigest": "de956b04637c84576de58574cc3f38e80fd1cafd3f7dce2c61b3f5fd5b5be64d",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Tapped the playback control; it now reads “Play,” confirming playback is paused.",
+    "startPath": "dev.e2e.podcasts",
+    "endPath": "dev.e2e.podcasts",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Play",
+        "testId": "player-toggle"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "button",
+        "name": "Pause",
+        "testId": "player-toggle"
+      }
+    ],
+    "endWaitMs": 11533,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "android",
+      "engineName": "mobile",
+      "engineSpiVersion": 1,
+      "appIdentity": "a89dd5418179517a9af76075eec0c88401145f0746036c0eb4d4d3d125260441",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

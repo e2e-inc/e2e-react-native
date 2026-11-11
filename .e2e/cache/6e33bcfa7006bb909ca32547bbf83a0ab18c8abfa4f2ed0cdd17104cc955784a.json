@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T11:48:01.041Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Done\" in \"Add to playlist\"",
+        "target": {
+          "role": "button",
+          "name": "Done",
+          "within": "Add to playlist"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Back\" in \"Deep Space Diaries\"",
+        "target": {
+          "role": "button",
+          "name": "Back",
+          "within": "Deep Space Diaries"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap tab \"Library\" in \"Home\"",
+        "target": {
+          "role": "tab",
+          "name": "Library",
+          "within": "Home"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Playlists\" in \"Shows\"",
+        "target": {
+          "role": "button",
+          "name": "Playlists",
+          "within": "Shows"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Playlist Morning commute\" in \"Library\"",
+        "target": {
+          "role": "button",
+          "name": "Playlist Morning commute",
+          "within": "Library"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/episode.e2e.ts::episode%20page::find%20an%20episode%20in%20the%20playlist%20it%20was%20added%20to",
+      "targetId": "android",
+      "instructionDigest": "4faaeed016504d14cc954bbbd65327b2dd0405254ab746e790e84d814f49c443",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Opened Library from the episode page, selected Playlists, and opened Morning commute. The playlist page shows 3 episodes, including “Listening for Life on Europa.”",
+    "startPath": "dev.e2e.podcasts",
+    "endPath": "dev.e2e.podcasts",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "Morning commute"
+      },
+      {
+        "role": "text",
+        "name": "Play all"
+      },
+      {
+        "role": "text",
+        "name": "The Daily Brief · YESTERDAY"
+      },
+      {
+        "role": "text",
+        "name": "Markets Rally as Rates Hold Steady"
+      },
+      {
+        "role": "text",
+        "name": "Signal & Noise · TODAY"
+      },
+      {
+        "role": "button",
+        "name": "Delete playlist"
+      },
+      {
+        "role": "button",
+        "name": "Play all"
+      },
+      {
+        "role": "button",
+        "name": "Episode Markets Rally as Rates Hold Steady"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "text",
+        "name": "Deep Space Diaries"
+      },
+      {
+        "role": "heading",
+        "name": "Listening for Life on Europa"
+      },
+      {
+        "role": "text",
+        "name": "Save"
+      },
+      {
+        "role": "text",
+        "name": "Download"
+      },
+      {
+        "role": "text",
+        "name": "Up Next"
+      },
+      {
+        "role": "text",
+        "name": "Playlist"
+      },
+      {
+        "role": "text",
+        "name": "Share"
+      },
+      {
+        "role": "text",
+        "name": "Mark as played"
+      }
+    ],
+    "endWaitMs": 11508,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "android",
+      "engineName": "mobile",
+      "engineSpiVersion": 1,
+      "appIdentity": "a89dd5418179517a9af76075eec0c88401145f0746036c0eb4d4d3d125260441",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

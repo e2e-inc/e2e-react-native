@@ -1,0 +1,129 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T11:56:29.833Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Delete playlist\" in \"Morning commute\"",
+        "target": {
+          "role": "button",
+          "name": "Delete playlist",
+          "within": "Morning commute"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"DELETE\" in \"CANCEL\"",
+        "target": {
+          "role": "button",
+          "name": "DELETE",
+          "testId": "android:id/button1",
+          "selector": "id=android:id/button1",
+          "within": "CANCEL"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/playlists.e2e.ts::playlists::delete%20a%20playlist",
+      "targetId": "android",
+      "instructionDigest": "726083828ee12336a6a3780d5c3cae365d57185292f0b5990c409fca46a6c4f6",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Deleted the “Morning commute” playlist after confirming the deletion prompt. The app returned to Library > Playlists, where the playlist is no longer listed.",
+    "startPath": "dev.e2e.podcasts",
+    "endPath": "dev.e2e.podcasts",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "Library"
+      },
+      {
+        "role": "text",
+        "name": "Shows"
+      },
+      {
+        "role": "text",
+        "name": "Saved"
+      },
+      {
+        "role": "text",
+        "name": "Downloads"
+      },
+      {
+        "role": "text",
+        "name": "Playlists",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "text",
+        "name": "History"
+      },
+      {
+        "role": "text",
+        "name": "Up Next"
+      },
+      {
+        "role": "text",
+        "name": "2 episodes queued"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "heading",
+        "name": "Morning commute"
+      },
+      {
+        "role": "text",
+        "name": "Play all"
+      },
+      {
+        "role": "text",
+        "name": "The Daily Brief · YESTERDAY"
+      },
+      {
+        "role": "text",
+        "name": "Markets Rally as Rates Hold Steady"
+      },
+      {
+        "role": "text",
+        "name": "Signal & Noise · TODAY"
+      },
+      {
+        "role": "button",
+        "name": "Back"
+      },
+      {
+        "role": "button",
+        "name": "Delete playlist"
+      },
+      {
+        "role": "button",
+        "name": "Play all"
+      }
+    ],
+    "endWaitMs": 11406,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "android",
+      "engineName": "mobile",
+      "engineSpiVersion": 1,
+      "appIdentity": "a89dd5418179517a9af76075eec0c88401145f0746036c0eb4d4d3d125260441",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T11:08:46.866Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap tab \"Home\"",
+        "target": {
+          "role": "tab",
+          "name": "Home"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/interests.e2e.ts::interests::tailor%20Home%20to%20an%20added%20interest",
+      "targetId": "ios",
+      "instructionDigest": "b264c793ddf0a364491ebdacd30b31daf42fb961f9f79d4414c03ed0493972cc",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Navigated to Home; the Home tab is selected and the Home screen is displayed.",
+    "startPath": "dev.e2e.podcasts",
+    "endPath": "dev.e2e.podcasts",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Your profile"
+      },
+      {
+        "role": "button",
+        "name": "Featured: Signal & Noise"
+      },
+      {
+        "role": "button",
+        "name": "Play latest Signal & Noise"
+      },
+      {
+        "role": "button",
+        "name": "Unfollow Signal & Noise"
+      },
+      {
+        "role": "button",
+        "name": "Featured: Deep Space Diaries"
+      },
+      {
+        "role": "other",
+        "name": "Vertical scroll bar, 4 pages",
+        "value": "0%"
+      },
+      {
+        "role": "button",
+        "name": "Continue The Agents Are Coming for Your Test Suite"
+      },
+      {
+        "role": "button",
+        "name": "Play The Agents Are Coming for Your Test Suite"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "other",
+        "name": "Hours listened: 128.7"
+      },
+      {
+        "role": "other",
+        "name": "Episodes finished: 48"
+      },
+      {
+        "role": "other",
+        "name": "Following: 4"
+      },
+      {
+        "role": "button",
+        "name": "Technology",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "Science",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "Health & Wellness"
+      },
+      {
+        "role": "button",
+        "name": "Comedy",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "Travel"
+      }
+    ],
+    "endWaitMs": 11529,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "ios",
+      "engineName": "mobile",
+      "engineSpiVersion": 1,
+      "appIdentity": "a89dd5418179517a9af76075eec0c88401145f0746036c0eb4d4d3d125260441",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

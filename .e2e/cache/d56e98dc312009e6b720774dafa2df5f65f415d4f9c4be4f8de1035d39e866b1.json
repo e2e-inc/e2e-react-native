@@ -1,6 +1,6 @@
 {
   "schemaVersion": "trace-1",
-  "createdAt": "2026-11-11T10:05:18.682Z",
+  "createdAt": "2026-11-11T11:08:50.303Z",
   "payload": {
     "actions": [
       {
@@ -28,7 +28,7 @@
       "provider": "gateway",
       "model": "openai/gpt-6-luna-fast"
     },
-    "summary": "Opened “Listening for Life on Europa” from Home. The episode page is displayed with the matching title and a Save button.",
+    "summary": "Opened “Listening for Life on Europa” from Home. The episode page is displayed with the title and Save button.",
     "startPath": "/",
     "endPath": "/episode/deep-space-diaries-100",
     "endAnchors": [
@@ -60,7 +60,7 @@
     ],
     "goneAnchors": [
       {
-        "text": "Good morning"
+        "text": "Good afternoon"
       },
       {
         "text": "Alex"
@@ -86,7 +86,7 @@
         "name": "Featured: Deep Space Diaries"
       }
     ],
-    "endWaitMs": 11570,
+    "endWaitMs": 11477,
     "keyedBy": {
       "cacheSchema": "trace-1",
       "policyVersion": "conservative/6",

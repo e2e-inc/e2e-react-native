@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T11:17:46.927Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Mark as played\"",
+        "target": {
+          "role": "button",
+          "name": "Mark as played"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/episode.e2e.ts::episode%20page::mark%20an%20episode%20as%20played",
+      "targetId": "ios",
+      "instructionDigest": "3619aacd4964edf079e7f7345d32ffda20b54a578f1978b4e5581f46b836818b",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Marked “Listening for Life on Europa” as played. The episode page now shows “Played,” the playback control is “Play again,” and the action changed to “Mark as unplayed.”",
+    "startPath": "dev.e2e.podcasts",
+    "endPath": "dev.e2e.podcasts",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Play again",
+        "testId": "episode-play"
+      },
+      {
+        "role": "button",
+        "name": "Mark as unplayed"
+      },
+      {
+        "role": "text",
+        "name": "Played"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "button",
+        "name": "Mark as played"
+      }
+    ],
+    "endWaitMs": 11473,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "ios",
+      "engineName": "mobile",
+      "engineSpiVersion": 1,
+      "appIdentity": "a89dd5418179517a9af76075eec0c88401145f0746036c0eb4d4d3d125260441",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "trace-1",
-  "createdAt": "2026-11-11T09:58:42.950Z",
+  "createdAt": "2026-11-11T11:03:09.322Z",
   "payload": {
     "actions": [
       {
@@ -36,7 +36,7 @@
       "provider": "gateway",
       "model": "openai/gpt-6-luna-fast"
     },
-    "summary": "Opened Library and selected History. The Recently played list is visible, including three previously played episodes.",
+    "summary": "The Library is open with History selected, showing the Recently played listening history and its episodes.",
     "startPath": "/",
     "endPath": "/library",
     "endAnchors": [
@@ -68,7 +68,7 @@
     ],
     "goneAnchors": [
       {
-        "text": "Good morning"
+        "text": "Good afternoon"
       },
       {
         "text": "Alex"
@@ -94,7 +94,7 @@
         "name": "Featured: Deep Space Diaries"
       }
     ],
-    "endWaitMs": 11632,
+    "endWaitMs": 10166,
     "keyedBy": {
       "cacheSchema": "trace-1",
       "policyVersion": "conservative/6",

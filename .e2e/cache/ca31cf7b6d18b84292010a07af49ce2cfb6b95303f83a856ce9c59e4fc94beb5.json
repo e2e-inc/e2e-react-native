@@ -1,0 +1,138 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T12:04:34.525Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap tab \"Search\" in \"Home\"",
+        "target": {
+          "role": "tab",
+          "name": "Search",
+          "within": "Home"
+        }
+      },
+      {
+        "name": "type",
+        "summary": "type \"Trail Notes\" into textbox \"Search podcasts\" in \"Shows, episodes, people\"",
+        "target": {
+          "role": "textbox",
+          "name": "Search podcasts",
+          "text": "Shows, episodes, people",
+          "testId": "search-input",
+          "placeholder": "Shows, episodes, people",
+          "selector": "id=search-input",
+          "within": "Shows, episodes, people"
+        },
+        "value": "Trail Notes"
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Trail Notes\"",
+        "target": {
+          "role": "button",
+          "name": "Trail Notes"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/show.e2e.ts::show%20page::write%20a%20review",
+      "targetId": "android",
+      "instructionDigest": "f981cf221fccfd87144605faeae92a4795a3682010673a2a8714391cc0f2bd16",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Searched for Trail Notes and opened its show page. The page displays Trail Notes by Hannah Frost, with Episodes and Reviews tabs.",
+    "startPath": "dev.e2e.podcasts",
+    "endPath": "dev.e2e.podcasts",
+    "endAnchors": [
+      {
+        "role": "text",
+        "name": "TRAVEL"
+      },
+      {
+        "role": "heading",
+        "name": "Trail Notes",
+        "testId": "show-title"
+      },
+      {
+        "role": "text",
+        "name": "Hannah Frost"
+      },
+      {
+        "role": "text",
+        "name": "4.9 (2.9K) · 41K followers"
+      },
+      {
+        "role": "text",
+        "name": "Follow"
+      },
+      {
+        "role": "text",
+        "name": "Field recordings and stories from mountains, forests, and long-distance trails. Put on your boots and come along."
+      },
+      {
+        "role": "text",
+        "name": "More"
+      },
+      {
+        "role": "text",
+        "name": "Episodes"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "text",
+        "name": "Good afternoon"
+      },
+      {
+        "role": "text",
+        "name": "Alex"
+      },
+      {
+        "role": "button",
+        "name": "Featured: Signal & Noise"
+      },
+      {
+        "role": "text",
+        "name": "FEATURED · TECHNOLOGY"
+      },
+      {
+        "role": "text",
+        "name": "A weekly conversation about the technology shaping our lives. Maya Chen talks with founders, engineers, and researchers about AI, software, and the future of work."
+      },
+      {
+        "role": "text",
+        "name": "Following"
+      },
+      {
+        "role": "button",
+        "name": "Featured: Deep Space Diaries"
+      },
+      {
+        "role": "heading",
+        "name": "Continue listening"
+      }
+    ],
+    "endWaitMs": 11869,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "android",
+      "engineName": "mobile",
+      "engineSpiVersion": 1,
+      "appIdentity": "a89dd5418179517a9af76075eec0c88401145f0746036c0eb4d4d3d125260441",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

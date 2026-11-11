@@ -4,7 +4,7 @@ describe('episode share sheet', () => {
   beforeEach(async ({ app, agent, screen }) => {
     await app.open();
     await agent.act('open the share sheet for the episode in the full player, without sharing it yet');
-    await expect(screen.getByRole('heading', 'Share episode')).toBeVisible();
+    await expect(screen.getByTestId('share-title')).toHaveText('Share episode');
   });
 
   test('links to the current position', async ({ screen }) => {

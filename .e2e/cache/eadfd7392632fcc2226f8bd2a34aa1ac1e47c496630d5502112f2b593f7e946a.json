@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T11:25:09.213Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Back\"",
+        "target": {
+          "role": "button",
+          "name": "Back"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap tab \"Library\"",
+        "target": {
+          "role": "tab",
+          "name": "Library"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/show.e2e.ts::show%20page::find%20a%20followed%20show%20in%20the%20Library",
+      "targetId": "ios",
+      "instructionDigest": "5cb5392b589f76617f80c9ebf3f915b9a2fd8578dbbb7d20cba19ba545ca94ef",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Opened Library with the Shows list selected. Trail Notes, the followed show, is visible in the list; remained on the list.",
+    "startPath": "dev.e2e.podcasts",
+    "endPath": "dev.e2e.podcasts",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "New playlist"
+      },
+      {
+        "role": "button",
+        "name": "Shows",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "Saved"
+      },
+      {
+        "role": "button",
+        "name": "Downloads"
+      },
+      {
+        "role": "button",
+        "name": "Playlists"
+      },
+      {
+        "role": "button",
+        "name": "History"
+      },
+      {
+        "role": "other",
+        "name": "Vertical scroll bar, 2 pages",
+        "value": "0%"
+      },
+      {
+        "role": "button",
+        "name": "Up Next"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "button",
+        "name": "Following"
+      },
+      {
+        "role": "button",
+        "name": "Play latest"
+      },
+      {
+        "role": "button",
+        "name": "Turn off new episode alerts",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "Show description"
+      },
+      {
+        "role": "button",
+        "name": "Episodes",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "Reviews"
+      },
+      {
+        "role": "button",
+        "name": "Sort oldest first"
+      },
+      {
+        "role": "button",
+        "name": "Episode Sunrise on the Ridge"
+      }
+    ],
+    "endWaitMs": 11955,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "ios",
+      "engineName": "mobile",
+      "engineSpiVersion": 1,
+      "appIdentity": "a89dd5418179517a9af76075eec0c88401145f0746036c0eb4d4d3d125260441",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

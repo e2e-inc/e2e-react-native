@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T11:26:04.374Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Now playing: The Agents Are Coming for …\"",
+        "target": {
+          "role": "button",
+          "name": "Now playing: The Agents Are Coming for Your Test Suite",
+          "testId": "mini-player",
+          "selector": "id=mini-player"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Open Up Next\"",
+        "target": {
+          "role": "button",
+          "name": "Open Up Next"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/up-next.e2e.ts::Up%20Next::reorder%20the%20queue",
+      "targetId": "ios",
+      "instructionDigest": "6ccc25d3b112d2d9794a5549c0bf96f30505380ae0df459a3846260a73f828a2",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Opened the Up Next queue. The queue screen is visible with the current episode and two queued episodes.",
+    "startPath": "dev.e2e.podcasts",
+    "endPath": "dev.e2e.podcasts",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Back"
+      },
+      {
+        "role": "button",
+        "name": "Clear"
+      },
+      {
+        "role": "button",
+        "name": "Play Testing Mobile Apps End to End"
+      },
+      {
+        "role": "button",
+        "name": "Move Testing Mobile Apps End to End up"
+      },
+      {
+        "role": "button",
+        "name": "Move Testing Mobile Apps End to End down"
+      },
+      {
+        "role": "button",
+        "name": "Remove Testing Mobile Apps End to End from queue"
+      },
+      {
+        "role": "button",
+        "name": "Play The Perfect Weeknight Pasta"
+      },
+      {
+        "role": "button",
+        "name": "Move The Perfect Weeknight Pasta up"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "image",
+        "testId": "SplashScreenLogo"
+      },
+      {
+        "role": "text",
+        "name": "Downloading 100%…"
+      }
+    ],
+    "endWaitMs": 13941,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "ios",
+      "engineName": "mobile",
+      "engineSpiVersion": 1,
+      "appIdentity": "a89dd5418179517a9af76075eec0c88401145f0746036c0eb4d4d3d125260441",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T10:40:01.563Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Skip forward 30 seconds\"",
+        "target": {
+          "role": "button",
+          "name": "Skip forward 30 seconds"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/player.e2e.ts::full%20player::skip%20forward",
+      "targetId": "ios",
+      "instructionDigest": "462121576d59120d8a735a4b37422f986c556ea8836842efd1f3a1610e242d56",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Tapped Skip forward 30 seconds. The elapsed time advanced from 12:34 to 13:04, confirming the 30-second skip.",
+    "startPath": "dev.e2e.podcasts",
+    "endPath": "dev.e2e.podcasts",
+    "endAnchors": [
+      {
+        "role": "other",
+        "name": "Playback position",
+        "testId": "scrubber",
+        "value": "13:04 of 38:30"
+      },
+      {
+        "role": "text",
+        "name": "13:04",
+        "testId": "elapsed-time"
+      },
+      {
+        "role": "text",
+        "name": "-25:26",
+        "testId": "remaining-time"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "other",
+        "name": "Playback position",
+        "testId": "scrubber",
+        "value": "12:34 of 38:30"
+      },
+      {
+        "role": "text",
+        "name": "12:34",
+        "testId": "elapsed-time"
+      },
+      {
+        "role": "text",
+        "name": "-25:56",
+        "testId": "remaining-time"
+      }
+    ],
+    "endWaitMs": 14175,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "ios",
+      "engineName": "mobile",
+      "engineSpiVersion": 1,
+      "appIdentity": "a89dd5418179517a9af76075eec0c88401145f0746036c0eb4d4d3d125260441",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

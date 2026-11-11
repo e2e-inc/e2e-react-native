@@ -1,0 +1,126 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T12:05:20.077Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Now playing: The Agents Are Coming for …\" in \"The Agents Are Coming for Your Test Sui…\"",
+        "target": {
+          "role": "button",
+          "name": "Now playing: The Agents Are Coming for Your Test Suite",
+          "testId": "mini-player",
+          "selector": "id=mini-player",
+          "within": "The Agents Are Coming for Your Test Suite"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Open Up Next\" in \"The Agents Are Coming for Your Test Sui…\"",
+        "target": {
+          "role": "button",
+          "name": "Open Up Next",
+          "within": "The Agents Are Coming for Your Test Suite"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/up-next.e2e.ts::Up%20Next::reorder%20the%20queue",
+      "targetId": "android",
+      "instructionDigest": "6ccc25d3b112d2d9794a5549c0bf96f30505380ae0df459a3846260a73f828a2",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Opened the Up Next queue. The screen shows two queued episodes, “Testing Mobile Apps End to End” and “The Perfect Weeknight Pasta.”",
+    "startPath": "dev.e2e.podcasts",
+    "endPath": "dev.e2e.podcasts",
+    "endAnchors": [
+      {
+        "role": "text",
+        "name": "Up Next"
+      },
+      {
+        "role": "text",
+        "name": "Clear"
+      },
+      {
+        "role": "text",
+        "name": "NOW PLAYING"
+      },
+      {
+        "role": "text",
+        "name": "Paused · Signal & Noise"
+      },
+      {
+        "role": "text",
+        "name": "QUEUE"
+      },
+      {
+        "role": "text",
+        "name": "Testing Mobile Apps End to End"
+      },
+      {
+        "role": "text",
+        "name": "The Perfect Weeknight Pasta"
+      },
+      {
+        "role": "text",
+        "name": "Find something to play"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "text",
+        "name": "Good afternoon"
+      },
+      {
+        "role": "text",
+        "name": "Alex"
+      },
+      {
+        "role": "button",
+        "name": "Featured: Signal & Noise"
+      },
+      {
+        "role": "text",
+        "name": "FEATURED · TECHNOLOGY"
+      },
+      {
+        "role": "text",
+        "name": "Signal & Noise"
+      },
+      {
+        "role": "text",
+        "name": "A weekly conversation about the technology shaping our lives. Maya Chen talks with founders, engineers, and researchers about AI, software, and the future of work."
+      },
+      {
+        "role": "text",
+        "name": "Play latest"
+      },
+      {
+        "role": "text",
+        "name": "Following"
+      }
+    ],
+    "endWaitMs": 11790,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "android",
+      "engineName": "mobile",
+      "engineSpiVersion": 1,
+      "appIdentity": "a89dd5418179517a9af76075eec0c88401145f0746036c0eb4d4d3d125260441",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

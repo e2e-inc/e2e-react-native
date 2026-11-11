@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T11:26:39.433Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Clear\"",
+        "target": {
+          "role": "button",
+          "name": "Clear"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/up-next.e2e.ts::Up%20Next::clear%20the%20queue",
+      "targetId": "ios",
+      "instructionDigest": "861fe1bdc2243a21909002e448108c1734ce3a871a326741c54f88c49b7c92b4",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Tapped Clear in Up Next. The queue is now empty, and the screen displays “Your queue is empty.”",
+    "startPath": "dev.e2e.podcasts",
+    "endPath": "dev.e2e.podcasts",
+    "endAnchors": [
+      {
+        "role": "text",
+        "name": "Your queue is empty"
+      },
+      {
+        "role": "text",
+        "name": "Add episodes to Up Next and they’ll play automatically."
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "button",
+        "name": "Clear"
+      },
+      {
+        "role": "button",
+        "name": "Play Testing Mobile Apps End to End"
+      },
+      {
+        "role": "button",
+        "name": "Move Testing Mobile Apps End to End up"
+      },
+      {
+        "role": "button",
+        "name": "Move Testing Mobile Apps End to End down"
+      },
+      {
+        "role": "button",
+        "name": "Remove Testing Mobile Apps End to End from queue"
+      },
+      {
+        "role": "button",
+        "name": "Play The Perfect Weeknight Pasta"
+      },
+      {
+        "role": "button",
+        "name": "Move The Perfect Weeknight Pasta up"
+      },
+      {
+        "role": "button",
+        "name": "Move The Perfect Weeknight Pasta down"
+      }
+    ],
+    "endWaitMs": 11612,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "ios",
+      "engineName": "mobile",
+      "engineSpiVersion": 1,
+      "appIdentity": "a89dd5418179517a9af76075eec0c88401145f0746036c0eb4d4d3d125260441",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

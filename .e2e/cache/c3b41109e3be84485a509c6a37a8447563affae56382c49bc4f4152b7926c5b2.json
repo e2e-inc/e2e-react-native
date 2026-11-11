@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T11:10:45.713Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Delete playlist\"",
+        "target": {
+          "role": "button",
+          "name": "Delete playlist"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Delete\" in \"Delete playlist?\"",
+        "target": {
+          "role": "button",
+          "name": "Delete",
+          "within": "Delete playlist?"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/playlists.e2e.ts::playlists::delete%20a%20playlist",
+      "targetId": "ios",
+      "instructionDigest": "726083828ee12336a6a3780d5c3cae365d57185292f0b5990c409fca46a6c4f6",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Confirmed deletion of the Morning commute playlist. The app returned to Library > Playlists and displayed “Playlist deleted.”",
+    "startPath": "dev.e2e.podcasts",
+    "endPath": "dev.e2e.podcasts",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "New playlist"
+      },
+      {
+        "role": "button",
+        "name": "Shows"
+      },
+      {
+        "role": "button",
+        "name": "Saved"
+      },
+      {
+        "role": "button",
+        "name": "Downloads"
+      },
+      {
+        "role": "button",
+        "name": "Playlists",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "History"
+      },
+      {
+        "role": "other",
+        "name": "Vertical scroll bar, 2 pages",
+        "value": "0%"
+      },
+      {
+        "role": "button",
+        "name": "Up Next"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "button",
+        "name": "Back"
+      },
+      {
+        "role": "button",
+        "name": "Delete playlist"
+      },
+      {
+        "role": "button",
+        "name": "Play all"
+      },
+      {
+        "role": "button",
+        "name": "Episode Markets Rally as Rates Hold Steady"
+      },
+      {
+        "role": "button",
+        "name": "Play Markets Rally as Rates Hold Steady"
+      },
+      {
+        "role": "button",
+        "name": "Episode The Agents Are Coming for Your Test Suite"
+      },
+      {
+        "role": "button",
+        "name": "Play The Agents Are Coming for Your Test Suite"
+      },
+      {
+        "role": "other",
+        "name": "Vertical scroll bar, 1 page",
+        "value": "0%"
+      }
+    ],
+    "endWaitMs": 11587,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "ios",
+      "engineName": "mobile",
+      "engineSpiVersion": 1,
+      "appIdentity": "a89dd5418179517a9af76075eec0c88401145f0746036c0eb4d4d3d125260441",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

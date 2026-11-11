@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T11:25:47.468Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Reviews\"",
+        "target": {
+          "role": "button",
+          "name": "Reviews"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/show.e2e.ts::show%20page::write%20a%20review",
+      "targetId": "ios",
+      "instructionDigest": "6971b23562c8b4c83d100b78afcbe81a13c3c30968c2babeaa0cbac9996d9770",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Opened the Reviews tab on the Trail Notes show page; Reviews is selected and the review list with a Write a review button is visible.",
+    "startPath": "dev.e2e.podcasts",
+    "endPath": "dev.e2e.podcasts",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Episodes"
+      },
+      {
+        "role": "button",
+        "name": "Reviews",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "Write a review"
+      },
+      {
+        "role": "other",
+        "name": "Review by listener42"
+      },
+      {
+        "role": "text",
+        "name": "4.9"
+      },
+      {
+        "role": "text",
+        "name": "2.9K ratings"
+      },
+      {
+        "role": "text",
+        "name": "Binged the whole archive"
+      },
+      {
+        "role": "text",
+        "name": "Found this last month and caught up on everything. Instantly recommended it to friends."
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "button",
+        "name": "Episodes",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "Reviews"
+      },
+      {
+        "role": "button",
+        "name": "Sort oldest first"
+      },
+      {
+        "role": "button",
+        "name": "Episode Sunrise on the Ridge"
+      },
+      {
+        "role": "button",
+        "name": "Play Sunrise on the Ridge"
+      },
+      {
+        "role": "button",
+        "name": "Episode Thru-Hiking the Pacific Crest"
+      },
+      {
+        "role": "button",
+        "name": "Play Thru-Hiking the Pacific Crest"
+      },
+      {
+        "role": "button",
+        "name": "Episode The Quiet of the Old Forest"
+      }
+    ],
+    "endWaitMs": 11510,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "ios",
+      "engineName": "mobile",
+      "engineSpiVersion": 1,
+      "appIdentity": "a89dd5418179517a9af76075eec0c88401145f0746036c0eb4d4d3d125260441",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

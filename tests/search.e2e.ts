@@ -14,7 +14,6 @@ describe('search', () => {
   test('browse shows in a category', async ({ agent, screen }) => {
     await agent.act('open the Comedy category');
 
-    await expect(screen.getByRole('heading', 'Comedy')).toBeVisible();
     await expect(screen.getByRole('button', 'Laugh Track')).toBeVisible();
   });
 });

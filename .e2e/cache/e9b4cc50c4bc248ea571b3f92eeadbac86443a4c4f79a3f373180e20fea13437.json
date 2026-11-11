@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T11:25:09.212Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap tab \"Search\"",
+        "target": {
+          "role": "tab",
+          "name": "Search"
+        }
+      },
+      {
+        "name": "type",
+        "summary": "type \"Trail Notes\" into textbox \"Search podcasts\"",
+        "target": {
+          "role": "textbox",
+          "name": "Search podcasts",
+          "testId": "search-input",
+          "placeholder": "Shows, episodes, people",
+          "selector": "id=search-input"
+        },
+        "value": "Trail Notes"
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Trail Notes\"",
+        "target": {
+          "role": "button",
+          "name": "Trail Notes"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/show.e2e.ts::show%20page::find%20a%20followed%20show%20in%20the%20Library",
+      "targetId": "ios",
+      "instructionDigest": "f981cf221fccfd87144605faeae92a4795a3682010673a2a8714391cc0f2bd16",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Searched for Trail Notes and opened its show page. The page displays Trail Notes by Hannah Frost, with the Follow button and Episodes list.",
+    "startPath": "dev.e2e.podcasts",
+    "endPath": "dev.e2e.podcasts",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Follow"
+      },
+      {
+        "role": "button",
+        "name": "Play latest"
+      },
+      {
+        "role": "button",
+        "name": "Turn on new episode alerts"
+      },
+      {
+        "role": "button",
+        "name": "Show description"
+      },
+      {
+        "role": "button",
+        "name": "Episodes",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "Reviews"
+      },
+      {
+        "role": "button",
+        "name": "Sort oldest first"
+      },
+      {
+        "role": "button",
+        "name": "Episode Sunrise on the Ridge"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "image",
+        "testId": "SplashScreenLogo"
+      },
+      {
+        "role": "text",
+        "name": "Downloading 100%…"
+      }
+    ],
+    "endWaitMs": 14076,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "ios",
+      "engineName": "mobile",
+      "engineSpiVersion": 1,
+      "appIdentity": "a89dd5418179517a9af76075eec0c88401145f0746036c0eb4d4d3d125260441",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

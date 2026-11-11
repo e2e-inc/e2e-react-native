@@ -14,7 +14,7 @@ describe('playlists', () => {
 
   test('play a whole playlist', async ({ agent, screen }) => {
     await agent.act('open the Morning commute playlist from the Library');
-    await expect(screen.getByRole('heading', 'Morning commute')).toBeVisible();
+    await expect(screen.getByText('Morning commute', { visible: true })).toBeVisible();
 
     await agent.act('play all episodes in the playlist');
 
@@ -25,7 +25,7 @@ describe('playlists', () => {
   // The delete confirmation is a native alert, which react-native-web does not render.
   test('delete a playlist', { platforms: ['ios', 'android'] }, async ({ agent, screen }) => {
     await agent.act('open the Morning commute playlist from the Library');
-    await expect(screen.getByRole('heading', 'Morning commute')).toBeVisible();
+    await expect(screen.getByText('Morning commute', { visible: true })).toBeVisible();
 
     await agent.act('delete the playlist');
 

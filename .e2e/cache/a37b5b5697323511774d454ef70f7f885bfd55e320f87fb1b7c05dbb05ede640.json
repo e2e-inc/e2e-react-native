@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T10:40:31.506Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "scrollUntil",
+        "summary": "scroll down on other \"player-scroll\" until \"Deep dive\" shows (1 screen)",
+        "text": "Deep dive",
+        "direction": "down",
+        "target": {
+          "role": "other",
+          "testId": "player-scroll",
+          "selector": "id=player-scroll"
+        },
+        "spans": 0.8627
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Jump to Deep dive\"",
+        "target": {
+          "role": "button",
+          "name": "Jump to Deep dive"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/player.e2e.ts::full%20player::jump%20to%20a%20chapter",
+      "targetId": "ios",
+      "instructionDigest": "03b299904cc6c7d74cd0695c8d2eaf7ad7662322f5a7344160aacccda5b0adec",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Tapped “Jump to Deep dive” and verified it became the selected chapter; the player now shows “Chapter · Deep dive” at 19:15.",
+    "startPath": "dev.e2e.podcasts",
+    "endPath": "dev.e2e.podcasts",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Jump to Intro"
+      },
+      {
+        "role": "button",
+        "name": "Jump to The big idea"
+      },
+      {
+        "role": "button",
+        "name": "Jump to Deep dive",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "Jump to Listener questions"
+      },
+      {
+        "role": "text",
+        "name": "Chapter · Deep dive"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "text",
+        "name": "Chapter · The big idea"
+      }
+    ],
+    "endWaitMs": 11530,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "ios",
+      "engineName": "mobile",
+      "engineSpiVersion": 1,
+      "appIdentity": "a89dd5418179517a9af76075eec0c88401145f0746036c0eb4d4d3d125260441",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}
