@@ -10,7 +10,33 @@ export default {
       system: 'You are a thorough QA agent. Verify every outcome.',
     },
   },
-  // Replace Settings with your app's bundle id.
-  targets: [{ name: 'ios', engine: mobile({ platform: 'ios' }), app: { bundleId: 'Settings' } }],
+  targets: [
+    {
+      name: 'ios',
+      engine: mobile({ platform: 'ios', device: 'iPhone 17 Pro' }),
+      // A development build made with `npx expo run:ios`; Metro serves the JS bundle.
+      app: {
+        bundleId: 'dev.e2e.podcasts',
+        launchArguments: [
+          '--initialUrl',
+          'http://localhost:8081',
+          '-EXDevMenuShowsAtLaunch',
+          'NO',
+          '-EXDevMenuIsOnboardingFinished',
+          'YES',
+          '-EXDevMenuShowFloatingActionButton',
+          'NO',
+        ],
+        command: {
+          executable: 'npx',
+          args: ['expo', 'start', '--port', '8081'],
+          reuseExisting: true,
+          startupTimeout: 120_000,
+          log: '.e2e/logs/metro.log',
+        },
+        readyUrl: 'http://localhost:8081/status',
+      },
+    },
+  ],
   workers: 1,
 } satisfies E2EConfig;
