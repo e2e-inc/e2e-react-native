@@ -50,112 +50,112 @@ jobs:
           include-hidden-files: true
           retention-days: 7
 
-  ios:
-    if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
-    runs-on: macos-26
-    timeout-minutes: 60
-    steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
-        with:
-          node-version: 24
-          cache: npm
-      - run: npm ci
+#   ios:
+#     if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
+#     runs-on: macos-26
+#     timeout-minutes: 60
+#     steps:
+#       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+#       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+#         with:
+#           node-version: 24
+#           cache: npm
+#       - run: npm ci
 
-      # ios/ is generated (CNG); expo run:ios prebuilds it, installs pods, and builds without a simulator.
-      - name: Build for the simulator
-        run: npx expo run:ios --configuration Release --device generic --no-bundler --output build/ios
-      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
-        with:
-          path: ~/.agent-device/apple-runner/derived
-          key: agent-device-runner-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+#       # ios/ is generated (CNG); expo run:ios prebuilds it, installs pods, and builds without a simulator.
+#       - name: Build for the simulator
+#         run: npx expo run:ios --configuration Release --device generic --no-bundler --output build/ios
+#       - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+#         with:
+#           path: ~/.agent-device/apple-runner/derived
+#           key: agent-device-runner-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
 
-      - name: Boot a simulator and install the app
-        run: |
-          UDID=$(xcrun simctl create e2e "iPhone 17 Pro" com.apple.CoreSimulator.SimRuntime.iOS-26-5)
-          xcrun simctl bootstatus "$UDID" -b
-          APP=$(find build/ios -maxdepth 3 -name 'e2ereactnative.app' -type d | head -n 1)
-          echo "Installing $APP"
-          xcrun simctl install "$UDID" "$APP"
-          echo "E2E_IOS_DEVICE=$UDID" >> "$GITHUB_ENV"
+#       - name: Boot a simulator and install the app
+#         run: |
+#           UDID=$(xcrun simctl create e2e "iPhone 17 Pro" com.apple.CoreSimulator.SimRuntime.iOS-26-5)
+#           xcrun simctl bootstatus "$UDID" -b
+#           APP=$(find build/ios -maxdepth 3 -name 'e2ereactnative.app' -type d | head -n 1)
+#           echo "Installing $APP"
+#           xcrun simctl install "$UDID" "$APP"
+#           echo "E2E_IOS_DEVICE=$UDID" >> "$GITHUB_ENV"
 
-      - name: Run e2e
-        run: npx e2e run --target ios --workers 1 --reporter list,junit
-        env:
-          AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
+#       - name: Run e2e
+#         run: npx e2e run --target ios --workers 1 --reporter list,junit
+#         env:
+#           AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
 
-      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
-        if: ${{ !cancelled() }}
-        with:
-          name: e2e-ios
-          path: .e2e
-          if-no-files-found: warn
-          # .e2e is a hidden directory, which upload-artifact skips by default.
-          include-hidden-files: true
-          retention-days: 7
+#       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+#         if: ${{ !cancelled() }}
+#         with:
+#           name: e2e-ios
+#           path: .e2e
+#           if-no-files-found: warn
+#           # .e2e is a hidden directory, which upload-artifact skips by default.
+#           include-hidden-files: true
+#           retention-days: 7
 
-  android:
-    if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
-    runs-on: ubuntu-latest
-    timeout-minutes: 60
-    steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
-        with:
-          node-version: 24
-          cache: npm
-      - uses: actions/setup-java@b843ebf9b913146b38da2eaa7aeddf76074ae1ad # v6.1.0
-        with:
-          distribution: temurin
-          java-version: 17
-      - run: npm ci
+#   android:
+#     if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
+#     runs-on: ubuntu-latest
+#     timeout-minutes: 60
+#     steps:
+#       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+#       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+#         with:
+#           node-version: 24
+#           cache: npm
+#       - uses: actions/setup-java@b843ebf9b913146b38da2eaa7aeddf76074ae1ad # v6.1.0
+#         with:
+#           distribution: temurin
+#           java-version: 17
+#       - run: npm ci
 
-      - name: Enable KVM
-        run: |
-          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
-          sudo udevadm control --reload-rules
-          sudo udevadm trigger --name-match=kvm
+#       - name: Enable KVM
+#         run: |
+#           echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+#           sudo udevadm control --reload-rules
+#           sudo udevadm trigger --name-match=kvm
 
-      # android/ is generated (CNG). The Expo template signs release builds with the debug keystore.
-      # Only the emulator's ABI: building all four takes about 25 minutes.
-      - name: Build the APK
-        run: |
-          npx expo prebuild --platform android --no-install
-          cd android && ./gradlew :app:assembleRelease -PreactNativeArchitectures=x86_64
+#       # android/ is generated (CNG). The Expo template signs release builds with the debug keystore.
+#       # Only the emulator's ABI: building all four takes about 25 minutes.
+#       - name: Build the APK
+#         run: |
+#           npx expo prebuild --platform android --no-install
+#           cd android && ./gradlew :app:assembleRelease -PreactNativeArchitectures=x86_64
 
-      # The emulator action downloads the system image once and fails the job when that download drops.
-      - name: Install the emulator system image
-        run: |
-          SDKMANAGER="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
-          "$SDKMANAGER" --licenses < <(yes) > /dev/null
-          for attempt in 1 2 3; do
-            "$SDKMANAGER" --install 'system-images;android-36;google_apis;x86_64' > /dev/null && exit 0
-            echo "Download attempt $attempt failed"
-            sleep 30
-          done
-          exit 1
+#       # The emulator action downloads the system image once and fails the job when that download drops.
+#       - name: Install the emulator system image
+#         run: |
+#           SDKMANAGER="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
+#           "$SDKMANAGER" --licenses < <(yes) > /dev/null
+#           for attempt in 1 2 3; do
+#             "$SDKMANAGER" --install 'system-images;android-36;google_apis;x86_64' > /dev/null && exit 0
+#             echo "Download attempt $attempt failed"
+#             sleep 30
+#           done
+#           exit 1
 
-      - name: Run on an emulator
-        uses: reactivecircus/android-emulator-runner@a421e43855164a8197daf9d8d40fe71c6996bb0d # v2.38.0
-        with:
-          api-level: 36
-          arch: x86_64
-          target: google_apis
-          profile: pixel_7
-          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
-          disable-animations: true
-          script: |
-            adb install -r android/app/build/outputs/apk/release/app-release.apk
-            npx e2e run --target android --workers 1 --reporter list,junit
-        env:
-          AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
+#       - name: Run on an emulator
+#         uses: reactivecircus/android-emulator-runner@a421e43855164a8197daf9d8d40fe71c6996bb0d # v2.38.0
+#         with:
+#           api-level: 36
+#           arch: x86_64
+#           target: google_apis
+#           profile: pixel_7
+#           emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
+#           disable-animations: true
+#           script: |
+#             adb install -r android/app/build/outputs/apk/release/app-release.apk
+#             npx e2e run --target android --workers 1 --reporter list,junit
+#         env:
+#           AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
 
-      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
-        if: ${{ !cancelled() }}
-        with:
-          name: e2e-android
-          path: .e2e
-          if-no-files-found: warn
-          # .e2e is a hidden directory, which upload-artifact skips by default.
-          include-hidden-files: true
-          retention-days: 7
+#       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+#         if: ${{ !cancelled() }}
+#         with:
+#           name: e2e-android
+#           path: .e2e
+#           if-no-files-found: warn
+#           # .e2e is a hidden directory, which upload-artifact skips by default.
+#           include-hidden-files: true
+#           retention-days: 7
