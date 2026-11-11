@@ -1,4 +1,4 @@
-import { View } from 'react-native';
+import { LogBox, View } from 'react-native';
 import { DarkTheme, Stack, ThemeProvider } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 
@@ -8,6 +8,8 @@ import { ToastProvider } from '@/components/toast';
 import { LibraryProvider } from '@/store/library';
 import { PlayerProvider } from '@/store/player';
 import { colors } from '@/theme';
+
+LogBox.ignoreAllLogs();
 
 const theme = {
   ...DarkTheme,
