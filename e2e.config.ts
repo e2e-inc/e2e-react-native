@@ -3,7 +3,7 @@ import { mobile } from '@e2e-dev/mobile';
 import { web } from '@e2e-dev/web';
 import { gateway } from 'ai';
 
-// One Metro server serves the iOS bundle and the web app; targets declaring the same command share it.
+// One Metro server serves the iOS and Android bundles and the web app; targets declaring the same command share it.
 const metro = {
   executable: 'npx',
   args: ['expo', 'start', '--port', '8081'],
@@ -20,7 +20,7 @@ export default {
       system: 'You are a thorough QA agent. Verify every outcome.',
     },
   },
-  // Pick one with --target, or the test:e2e:ios and test:e2e:web scripts.
+  // Pick one with --target, or the test:e2e:ios, test:e2e:android, and test:e2e:web scripts.
   targets: [
     {
       name: 'ios',
@@ -38,6 +38,16 @@ export default {
           '-EXDevMenuShowFloatingActionButton',
           'NO',
         ],
+        command: metro,
+        readyUrl: 'http://localhost:8081/status',
+      },
+    },
+    {
+      name: 'android',
+      engine: mobile({ platform: 'android' }),
+      // A debug build made with `npx expo run:android`; it loads the bundle from Metro on the host (10.0.2.2:8081 on an emulator).
+      app: {
+        bundleId: 'dev.e2e.podcasts',
         command: metro,
         readyUrl: 'http://localhost:8081/status',
       },
