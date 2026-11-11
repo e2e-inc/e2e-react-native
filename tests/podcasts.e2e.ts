@@ -1,5 +1,4 @@
-import { test } from '@e2e-dev/mobile';
-import { expect } from 'e2e';
+import { expect, test } from 'e2e';
 
 test('discover a show through search and follow it', async ({ app, screen }) => {
   await app.open();
