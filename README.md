@@ -4,13 +4,9 @@ A mock podcast app built with [Expo](https://expo.dev) and tested end to end wit
 
 The app is a fake podcast player with a Home, Search, Library, and Profile tab, show and episode pages, a player with a queue and sleep timer, playlists, sharing, and settings. All data is local and mocked in `src/data/podcasts.ts`.
 
-<p align="center">
-  <img src="docs/screenshots/home.png" alt="Home" width="180" />
-  <img src="docs/screenshots/show.png" alt="Show page" width="180" />
-  <img src="docs/screenshots/player.png" alt="Player" width="180" />
-  <img src="docs/screenshots/library.png" alt="Library" width="180" />
-  <img src="docs/screenshots/search.png" alt="Search" width="180" />
-</p>
+| iOS | Android | Web |
+| :-: | :-: | :-: |
+| <img src="docs/screenshots/ios.png" alt="Home screen on iOS" width="240" /> | <img src="docs/screenshots/android.png" alt="Home screen on Android" width="240" /> | <img src="docs/screenshots/web.png" alt="Home screen on the web" width="240" /> |
 
 ## Get started
 
