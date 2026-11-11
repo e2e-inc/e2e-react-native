@@ -127,7 +127,7 @@ jobs:
       - name: Install the emulator system image
         run: |
           SDKMANAGER="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
-          yes | "$SDKMANAGER" --licenses > /dev/null
+          "$SDKMANAGER" --licenses < <(yes) > /dev/null
           for attempt in 1 2 3; do
             "$SDKMANAGER" --install 'system-images;android-36;google_apis;x86_64' > /dev/null && exit 0
             echo "Download attempt $attempt failed"
