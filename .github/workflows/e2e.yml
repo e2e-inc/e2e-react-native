@@ -51,7 +51,8 @@ jobs:
   ios:
     if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
     runs-on: macos-26
-    timeout-minutes: 60
+    # The Release build alone takes about 35 minutes on this runner.
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
@@ -68,11 +69,24 @@ jobs:
           path: ~/.agent-device/apple-runner/derived
           key: agent-device-runner-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
 
+      # Boots the image's own iPhone 17 Pro on the pinned runtime: a simulator made with
+      # `simctl create` spent over 7 minutes on its first boot. Bump the runtime on purpose,
+      # after a local run on it, since the accessibility tree changes between iOS releases.
       - name: Boot a simulator and install the app
+        env:
+          IOS_RUNTIME: com.apple.CoreSimulator.SimRuntime.iOS-26-5
         run: |
-          UDID=$(xcrun simctl create e2e "iPhone 17 Pro" com.apple.CoreSimulator.SimRuntime.iOS-26-5)
-          xcrun simctl bootstatus "$UDID" -b
+          set -euo pipefail
+          UDID=$(xcrun simctl list devices available -j | jq -r --arg rt "$IOS_RUNTIME" '.devices[$rt][]? | select(.name == "iPhone 17 Pro") | .udid' | head -n 1)
+          if [ -z "$UDID" ]; then
+            echo "::error::No iPhone 17 Pro on $IOS_RUNTIME"
+            xcrun simctl list runtimes
+            exit 1
+          fi
+          xcrun simctl boot "$UDID"
+          xcrun simctl bootstatus "$UDID"
           APP=$(find build/ios -maxdepth 3 -name 'e2ereactnative.app' -type d | head -n 1)
+          test -n "$APP"
           echo "Installing $APP"
           xcrun simctl install "$UDID" "$APP"
           echo "E2E_IOS_DEVICE=$UDID" >> "$GITHUB_ENV"
