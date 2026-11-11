@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T09:58:42.508Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Your profile\"",
+        "target": {
+          "role": "button",
+          "name": "Your profile"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Comedy\"",
+        "target": {
+          "role": "button",
+          "name": "Comedy"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/interests.e2e.ts::interests::add%20an%20interest%20to%20tailor%20Home",
+      "targetId": "web",
+      "instructionDigest": "41fd4388fce5f87feec43407b6a504203ff29526ed79a841b1c5fc89b718b39c",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Opened the profile and selected Comedy under Your interests; Comedy now shows as selected.",
+    "startPath": "/",
+    "endPath": "/profile",
+    "endAnchors": [
+      {
+        "text": "Alex Morgan"
+      },
+      {
+        "text": "@alexlistens"
+      },
+      {
+        "text": "128.7"
+      },
+      {
+        "text": "Hours listened"
+      },
+      {
+        "text": "Episodes finished"
+      },
+      {
+        "text": "This week"
+      },
+      {
+        "text": "M"
+      },
+      {
+        "text": "T"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Good morning"
+      },
+      {
+        "text": "Alex"
+      },
+      {
+        "role": "button",
+        "name": "Featured: Signal & Noise"
+      },
+      {
+        "text": "FEATURED · TECHNOLOGY"
+      },
+      {
+        "text": "A weekly conversation about the technology shaping our lives. Maya Chen talks with founders, engineers, and researchers about AI, software, and the future of work."
+      },
+      {
+        "text": "Play latest"
+      },
+      {
+        "role": "button",
+        "name": "Featured: Deep Space Diaries"
+      },
+      {
+        "text": "FEATURED · SCIENCE"
+      }
+    ],
+    "endWaitMs": 11412,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

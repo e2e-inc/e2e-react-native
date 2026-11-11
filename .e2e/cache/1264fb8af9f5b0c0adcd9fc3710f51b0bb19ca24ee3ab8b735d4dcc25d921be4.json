@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T09:55:11.891Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Follow\"",
+        "target": {
+          "role": "button",
+          "name": "Follow"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/discovery.e2e.ts::discovery::show%20page::follow%20a%20show",
+      "targetId": "web",
+      "instructionDigest": "dbce35a95ed1ae9efa9021e54557aef65f6aa3831dd6dd1b106055fc3e44dc9d",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Followed Trail Notes. The button changed to “Following,” new-episode alerts became enabled, and the app displayed “Following Trail Notes.”",
+    "startPath": "/show/trail-notes",
+    "endPath": "/show/trail-notes",
+    "endAnchors": [
+      {
+        "role": "alert",
+        "name": "Following Trail Notes"
+      },
+      {
+        "text": "Following"
+      },
+      {
+        "text": "Following Trail Notes"
+      },
+      {
+        "role": "button",
+        "name": "Following"
+      },
+      {
+        "role": "button",
+        "name": "Turn off new episode alerts",
+        "states": [
+          "selected"
+        ]
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Follow"
+      },
+      {
+        "role": "button",
+        "name": "Follow"
+      },
+      {
+        "role": "button",
+        "name": "Turn on new episode alerts"
+      }
+    ],
+    "endWaitMs": 11400,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

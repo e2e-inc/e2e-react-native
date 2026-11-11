@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T09:59:24.647Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Now playing: The Agents Are Coming for …\"",
+        "target": {
+          "role": "button",
+          "name": "Now playing: The Agents Are Coming for Your Test Suite",
+          "testId": "mini-player"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Share episode\"",
+        "target": {
+          "role": "button",
+          "name": "Share episode"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/share.e2e.ts::episode%20share%20sheet::send%20to%20a%20friend",
+      "targetId": "web",
+      "instructionDigest": "8428d8fe8bf95c464a8304802a6b611ef6e6cef594ffd90f4ae59d56c0714264",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Opened the full player for “The Agents Are Coming for Your Test Suite” and opened its Share episode sheet. The share preview and friend options are visible; no message was sent.",
+    "startPath": "/",
+    "endPath": "/share?episodeId=signal-and-noise-106&at=754",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "Share episode"
+      },
+      {
+        "text": "Friends jump straight to this moment"
+      },
+      {
+        "text": "SEND TO FRIENDS"
+      },
+      {
+        "text": "Messages"
+      },
+      {
+        "text": "Mail"
+      },
+      {
+        "text": "Copy link"
+      },
+      {
+        "text": "More"
+      },
+      {
+        "testId": "share-preview"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Good morning"
+      },
+      {
+        "text": "Alex"
+      },
+      {
+        "role": "button",
+        "name": "Featured: Signal & Noise"
+      },
+      {
+        "text": "FEATURED · TECHNOLOGY"
+      },
+      {
+        "text": "A weekly conversation about the technology shaping our lives. Maya Chen talks with founders, engineers, and researchers about AI, software, and the future of work."
+      },
+      {
+        "text": "Play latest"
+      },
+      {
+        "text": "Following"
+      },
+      {
+        "role": "button",
+        "name": "Featured: Deep Space Diaries"
+      }
+    ],
+    "endWaitMs": 11444,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

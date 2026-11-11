@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T09:59:38.432Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Clear\"",
+        "target": {
+          "role": "button",
+          "name": "Clear"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/up-next.e2e.ts::Up%20Next::clear%20the%20queue",
+      "targetId": "web",
+      "instructionDigest": "861fe1bdc2243a21909002e448108c1734ce3a871a326741c54f88c49b7c92b4",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Tapped Clear on Up Next. The queue now displays “Your queue is empty,” confirming both queued episodes were cleared.",
+    "startPath": "/queue",
+    "endPath": "/queue",
+    "endAnchors": [
+      {
+        "text": "Your queue is empty"
+      },
+      {
+        "text": "Add episodes to Up Next and they’ll play automatically."
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Clear"
+      },
+      {
+        "text": "Testing Mobile Apps End to End"
+      },
+      {
+        "text": "The Perfect Weeknight Pasta"
+      },
+      {
+        "role": "button",
+        "name": "Clear"
+      },
+      {
+        "name": "Queued: Testing Mobile Apps End to End"
+      },
+      {
+        "role": "button",
+        "name": "Play Testing Mobile Apps End to End"
+      },
+      {
+        "role": "button",
+        "name": "Move Testing Mobile Apps End to End up"
+      },
+      {
+        "role": "button",
+        "name": "Move Testing Mobile Apps End to End down"
+      }
+    ],
+    "endWaitMs": 11313,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T09:55:31.132Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Up Next\"",
+        "target": {
+          "role": "button",
+          "name": "Up Next"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/episode.e2e.ts::episode%20page::add%20an%20episode%20to%20Up%20Next",
+      "targetId": "web",
+      "instructionDigest": "4b0bd7e61fe9955e376528738a347cfac731d6a3ca67a1e009b98036fe85af35",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Tapped Up Next on the episode page. The button now reads “Queued” and an “Added to Up Next” alert is visible.",
+    "startPath": "/episode/deep-space-diaries-100",
+    "endPath": "/episode/deep-space-diaries-100",
+    "endAnchors": [
+      {
+        "role": "alert",
+        "name": "Added to Up Next"
+      },
+      {
+        "text": "Queued"
+      },
+      {
+        "text": "Added to Up Next"
+      },
+      {
+        "role": "button",
+        "name": "Queued",
+        "states": [
+          "selected"
+        ]
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Up Next"
+      },
+      {
+        "role": "button",
+        "name": "Up Next"
+      }
+    ],
+    "endWaitMs": 11434,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

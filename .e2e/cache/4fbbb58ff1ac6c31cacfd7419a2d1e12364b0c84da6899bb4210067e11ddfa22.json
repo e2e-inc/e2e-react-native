@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T09:52:44.459Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Playlists\"",
+        "target": {
+          "role": "button",
+          "name": "Playlists"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/playlists.e2e.ts::create%20a%20playlist",
+      "targetId": "web",
+      "instructionDigest": "6f532194cdbad3b30bb52b2aba71b663d2a703e59f3271752bfb2d6914ef7b0b",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Opened the Playlists section in Library. The playlists list is displayed, including “Morning commute” (2 episodes) and the newly created “Road trip” (0 episodes).",
+    "startPath": "/library",
+    "endPath": "/library",
+    "endAnchors": [
+      {
+        "text": "Morning commute"
+      },
+      {
+        "text": "2 episodes"
+      },
+      {
+        "text": "Road trip"
+      },
+      {
+        "text": "0 episodes"
+      },
+      {
+        "text": "Create a playlist"
+      },
+      {
+        "role": "button",
+        "name": "Shows"
+      },
+      {
+        "role": "button",
+        "name": "Playlists",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "Playlist Morning commute"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "alert",
+        "name": "Created “Road trip”"
+      },
+      {
+        "text": "Deep Space Diaries"
+      },
+      {
+        "text": "Code Review"
+      },
+      {
+        "text": "Kitchen Table"
+      },
+      {
+        "text": "Created “Road trip”"
+      },
+      {
+        "role": "button",
+        "name": "Shows",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "Playlists"
+      },
+      {
+        "role": "button",
+        "name": "Signal & Noise"
+      }
+    ],
+    "endWaitMs": 11363,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

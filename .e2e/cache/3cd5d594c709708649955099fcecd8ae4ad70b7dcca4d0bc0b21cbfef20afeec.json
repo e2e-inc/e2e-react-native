@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T09:59:02.613Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Playback speed 1×\"",
+        "target": {
+          "role": "button",
+          "name": "Playback speed 1×",
+          "testId": "speed-button"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Playback speed 1.25×\"",
+        "target": {
+          "role": "button",
+          "name": "Playback speed 1.25×",
+          "testId": "speed-button"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/player.e2e.ts::full%20player::change%20the%20playback%20speed",
+      "targetId": "web",
+      "instructionDigest": "af8ad764c5976ac051af52f2ea3035710c8531e4f264f9f5f5fe621322736ab8",
+      "paramsDigest": "d95c85af001f2e8b91dd26b5b438fdda611c7294438e35d01ca894699f6e508a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Changed the playback speed from 1× to 1.5×. The speed button now reads “Playback speed 1.5×.”",
+    "startPath": "/player",
+    "endPath": "/player",
+    "endAnchors": [
+      {
+        "text": "1.5×"
+      },
+      {
+        "role": "button",
+        "name": "Playback speed 1.5×",
+        "testId": "speed-button"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "1×"
+      },
+      {
+        "role": "button",
+        "name": "Playback speed 1×",
+        "testId": "speed-button"
+      }
+    ],
+    "endWaitMs": 11894,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

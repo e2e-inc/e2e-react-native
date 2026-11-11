@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T09:59:24.647Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Send to Olivia\"",
+        "target": {
+          "role": "button",
+          "name": "Send to Olivia"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/share.e2e.ts::episode%20share%20sheet::send%20to%20a%20friend",
+      "targetId": "web",
+      "instructionDigest": "e9c05df10c4e51207aac3534ccd49637b0cb85b22ff1326d6392d0aaee56e26b",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Sent the episode to Olivia. The button now reads “Sent to Olivia,” and a “Sent to Olivia” alert is visible.",
+    "startPath": "/share?episodeId=signal-and-noise-106&at=754",
+    "endPath": "/share?episodeId=signal-and-noise-106&at=754",
+    "endAnchors": [
+      {
+        "role": "alert",
+        "name": "Sent to Olivia"
+      },
+      {
+        "text": "Sent to Olivia"
+      },
+      {
+        "role": "button",
+        "name": "Sent to Olivia"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "button",
+        "name": "Send to Olivia"
+      }
+    ],
+    "endWaitMs": 11378,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

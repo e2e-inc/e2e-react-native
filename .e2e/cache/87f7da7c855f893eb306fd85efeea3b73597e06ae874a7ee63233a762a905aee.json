@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T09:55:50.210Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Done\"",
+        "target": {
+          "role": "button",
+          "name": "Done"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Back\"",
+        "target": {
+          "role": "button",
+          "name": "Back"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap tab \"Library\"",
+        "target": {
+          "role": "tab",
+          "name": "Library"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Playlists\"",
+        "target": {
+          "role": "button",
+          "name": "Playlists"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Playlist Morning commute\"",
+        "target": {
+          "role": "button",
+          "name": "Playlist Morning commute"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/episode.e2e.ts::episode%20page::add%20an%20episode%20to%20a%20playlist",
+      "targetId": "web",
+      "instructionDigest": "4faaeed016504d14cc954bbbd65327b2dd0405254ab746e790e84d814f49c443",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Opened Library, selected Playlists, and opened Morning commute. The playlist page is displayed with 3 episodes, including “Listening for Life on Europa.”",
+    "startPath": "/add-to-playlist?episodeId=deep-space-diaries-100",
+    "endPath": "/playlist/commute",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "Morning commute"
+      },
+      {
+        "text": "Play all"
+      },
+      {
+        "text": "The Daily Brief · YESTERDAY"
+      },
+      {
+        "text": "Markets Rally as Rates Hold Steady"
+      },
+      {
+        "text": "Signal & Noise · TODAY"
+      },
+      {
+        "text": "The Agents Are Coming for Your Test Suite"
+      },
+      {
+        "text": "Signal & Noise"
+      },
+      {
+        "role": "button",
+        "name": "Back"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "heading",
+        "name": "Add to playlist"
+      },
+      {
+        "text": "Morning commute"
+      },
+      {
+        "text": "3 episodes"
+      },
+      {
+        "text": "New playlist"
+      },
+      {
+        "text": "Done"
+      },
+      {
+        "role": "checkbox",
+        "name": "Morning commute",
+        "states": [
+          "checked"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "New playlist"
+      },
+      {
+        "role": "button",
+        "name": "Done"
+      }
+    ],
+    "endWaitMs": 12501,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

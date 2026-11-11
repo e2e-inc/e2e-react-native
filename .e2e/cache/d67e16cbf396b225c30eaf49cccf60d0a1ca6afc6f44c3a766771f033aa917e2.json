@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T09:56:25.906Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Play The Perfect Weeknight Pasta\"",
+        "target": {
+          "role": "button",
+          "name": "Play The Perfect Weeknight Pasta"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/library.e2e.ts::library::Up%20Next::play%20an%20episode%20from%20the%20queue",
+      "targetId": "web",
+      "instructionDigest": "81b12f75402cbd73a1717fdbb6bd4645ced60b1081a641a496253c0057ccd1af",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Played The Perfect Weeknight Pasta from Up Next. The queue’s NOW PLAYING section now shows “The Perfect Weeknight Pasta” with status “Playing · Kitchen Table”.",
+    "startPath": "/queue",
+    "endPath": "/queue",
+    "endAnchors": [
+      {
+        "text": "Playing · Kitchen Table"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "The Agents Are Coming for Your Test Suite"
+      },
+      {
+        "text": "Paused · Signal & Noise"
+      },
+      {
+        "name": "Queued: The Perfect Weeknight Pasta"
+      },
+      {
+        "role": "button",
+        "name": "Play The Perfect Weeknight Pasta"
+      },
+      {
+        "role": "button",
+        "name": "Move The Perfect Weeknight Pasta up"
+      },
+      {
+        "role": "button",
+        "name": "Move The Perfect Weeknight Pasta down"
+      },
+      {
+        "role": "button",
+        "name": "Remove The Perfect Weeknight Pasta from queue"
+      }
+    ],
+    "endWaitMs": 11515,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

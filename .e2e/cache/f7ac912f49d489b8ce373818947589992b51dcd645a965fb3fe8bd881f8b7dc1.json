@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T09:55:26.310Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Jump to Deep dive\"",
+        "target": {
+          "role": "button",
+          "name": "Jump to Deep dive"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/playback.e2e.ts::playback::full%20player::jump%20to%20a%20chapter",
+      "targetId": "web",
+      "instructionDigest": "03b299904cc6c7d74cd0695c8d2eaf7ad7662322f5a7344160aacccda5b0adec",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Selected the Deep dive chapter. Playback position moved to 19:15, the chapter label now reads “Chapter · Deep dive,” and Deep dive is selected.",
+    "startPath": "/player",
+    "endPath": "/player",
+    "endAnchors": [
+      {
+        "text": "Chapter · Deep dive"
+      },
+      {
+        "role": "button",
+        "name": "Jump to The big idea"
+      },
+      {
+        "role": "button",
+        "name": "Jump to Deep dive",
+        "states": [
+          "selected"
+        ]
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Chapter · The big idea"
+      },
+      {
+        "role": "button",
+        "name": "Jump to The big idea",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "Jump to Deep dive"
+      }
+    ],
+    "endWaitMs": 11388,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

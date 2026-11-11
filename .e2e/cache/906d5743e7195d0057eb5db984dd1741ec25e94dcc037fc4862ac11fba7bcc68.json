@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T09:52:56.660Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"45s\"",
+        "target": {
+          "role": "button",
+          "name": "45s"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/profile.e2e.ts::change%20the%20skip%20forward%20interval",
+      "targetId": "web",
+      "instructionDigest": "0501e46337492f1124352f86e42247157fd0077157d58f1bf7ceeb10c52843ee",
+      "paramsDigest": "8ed76b2c2299bec8f14a273b1f4336f8befa8b0f3d9081e39c15a7739c7ce0aa",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Set Skip forward to 45 seconds. The 45s option is selected and the mini-player control now reads “Skip forward 45 seconds”.",
+    "startPath": "/settings",
+    "endPath": "/settings",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "45s",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "Skip forward 45 seconds"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "button",
+        "name": "30s",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "45s"
+      },
+      {
+        "role": "button",
+        "name": "Skip forward 30 seconds"
+      }
+    ],
+    "endWaitMs": 11495,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

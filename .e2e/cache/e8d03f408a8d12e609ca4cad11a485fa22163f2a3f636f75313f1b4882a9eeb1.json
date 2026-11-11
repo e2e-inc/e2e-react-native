@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T09:55:20.498Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Episode Listening for Life on Europa\"",
+        "target": {
+          "role": "button",
+          "name": "Episode Listening for Life on Europa"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/episode.e2e.ts::episode%20page::mark%20an%20episode%20as%20played",
+      "targetId": "web",
+      "instructionDigest": "d6f1e7e76dbc2b366d642133beb10a988917e44ea0c23b37dce283be53ca7ca0",
+      "paramsDigest": "cef67c3e4e813804476808aebfb1eace659d935bcc48083f5e9ac983988dacbe",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Opened the episode page for “Listening for Life on Europa”; its title is shown on the page.",
+    "startPath": "/",
+    "endPath": "/episode/deep-space-diaries-100",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "Listening for Life on Europa"
+      },
+      {
+        "text": "Save"
+      },
+      {
+        "text": "Download"
+      },
+      {
+        "text": "Up Next"
+      },
+      {
+        "text": "Playlist"
+      },
+      {
+        "text": "Share"
+      },
+      {
+        "text": "Mark as played"
+      },
+      {
+        "text": "ABOUT THIS EPISODE"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Good morning"
+      },
+      {
+        "text": "Alex"
+      },
+      {
+        "role": "button",
+        "name": "Featured: Signal & Noise"
+      },
+      {
+        "text": "FEATURED · TECHNOLOGY"
+      },
+      {
+        "text": "A weekly conversation about the technology shaping our lives. Maya Chen talks with founders, engineers, and researchers about AI, software, and the future of work."
+      },
+      {
+        "text": "Play latest"
+      },
+      {
+        "text": "Following"
+      },
+      {
+        "role": "button",
+        "name": "Featured: Deep Space Diaries"
+      }
+    ],
+    "endWaitMs": 12340,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

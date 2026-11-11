@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T09:56:12.565Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Remove Testing Mobile Apps End to End f…\"",
+        "target": {
+          "role": "button",
+          "name": "Remove Testing Mobile Apps End to End from queue"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/library.e2e.ts::library::Up%20Next::remove%20an%20episode%20from%20the%20queue",
+      "targetId": "web",
+      "instructionDigest": "2b71da5f483642b62d063c9c312d93aa175a03d25de581c03c4e74e339550c55",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Removed “Testing Mobile Apps End to End” from Up Next; it is no longer in the queue, and “The Perfect Weeknight Pasta” remains.",
+    "startPath": "/queue",
+    "endPath": "/queue",
+    "goneAnchors": [
+      {
+        "text": "Testing Mobile Apps End to End"
+      },
+      {
+        "name": "Queued: Testing Mobile Apps End to End"
+      },
+      {
+        "role": "button",
+        "name": "Play Testing Mobile Apps End to End"
+      },
+      {
+        "role": "button",
+        "name": "Move Testing Mobile Apps End to End up"
+      },
+      {
+        "role": "button",
+        "name": "Move Testing Mobile Apps End to End down"
+      },
+      {
+        "role": "button",
+        "name": "Remove Testing Mobile Apps End to End from queue"
+      }
+    ],
+    "endWaitMs": 11416,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

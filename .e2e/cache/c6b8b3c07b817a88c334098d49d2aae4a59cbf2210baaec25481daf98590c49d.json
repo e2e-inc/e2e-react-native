@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T09:58:46.003Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Unfollow Signal & Noise\"",
+        "target": {
+          "role": "button",
+          "name": "Unfollow Signal & Noise"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/home.e2e.ts::home::unfollow%20a%20featured%20show",
+      "targetId": "web",
+      "instructionDigest": "5e8ca53dfd7e572716cc7d050ab5cf5d8c22943b37a47860a53a441b332b4c5c",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Tapped Unfollow Signal & Noise. The featured control now reads “Follow Signal & Noise” with status “Follow,” confirming the show was unfollowed.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "Because you like Technology"
+      },
+      {
+        "text": "Maya Chen"
+      },
+      {
+        "role": "button",
+        "name": "Follow Signal & Noise"
+      },
+      {
+        "role": "button",
+        "name": "Signal & Noise"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Signal & Noise · TODAY"
+      },
+      {
+        "role": "button",
+        "name": "Unfollow Signal & Noise"
+      },
+      {
+        "role": "button",
+        "name": "Episode The Agents Are Coming for Your Test Suite"
+      }
+    ],
+    "endWaitMs": 11350,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

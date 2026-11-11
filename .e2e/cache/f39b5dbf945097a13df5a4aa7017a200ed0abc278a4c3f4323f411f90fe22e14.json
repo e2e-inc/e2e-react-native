@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T09:59:00.791Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap tab \"Profile\"",
+        "target": {
+          "role": "tab",
+          "name": "Profile"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Playback & notifications\"",
+        "target": {
+          "role": "button",
+          "name": "Playback & notifications"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/settings.e2e.ts::settings::change%20the%20skip%20forward%20interval",
+      "targetId": "web",
+      "instructionDigest": "9fb8afca6b00ee53657ae75db9eaa4b3e3621c53973300cb7f736d6f93661b5e",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Opened Playback & notifications settings. The Settings screen is displayed with the Playback section, including Skip forward options (15s, 30s selected, 45s, 60s).",
+    "startPath": "/",
+    "endPath": "/settings",
+    "endAnchors": [
+      {
+        "text": "Settings"
+      },
+      {
+        "text": "PLAYBACK"
+      },
+      {
+        "text": "Default speed"
+      },
+      {
+        "text": "0.75×"
+      },
+      {
+        "text": "1×"
+      },
+      {
+        "text": "1.25×"
+      },
+      {
+        "text": "1.5×"
+      },
+      {
+        "text": "2×"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Good morning"
+      },
+      {
+        "text": "Alex"
+      },
+      {
+        "role": "button",
+        "name": "Featured: Signal & Noise"
+      },
+      {
+        "text": "FEATURED · TECHNOLOGY"
+      },
+      {
+        "text": "A weekly conversation about the technology shaping our lives. Maya Chen talks with founders, engineers, and researchers about AI, software, and the future of work."
+      },
+      {
+        "text": "Play latest"
+      },
+      {
+        "text": "Following"
+      },
+      {
+        "role": "button",
+        "name": "Featured: Deep Space Diaries"
+      }
+    ],
+    "endWaitMs": 11646,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

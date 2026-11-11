@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T09:52:31.888Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Pause\"",
+        "target": {
+          "role": "button",
+          "name": "Pause",
+          "testId": "player-toggle"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/playback.e2e.ts::play%20and%20pause%20in%20the%20full%20player",
+      "targetId": "web",
+      "instructionDigest": "de956b04637c84576de58574cc3f38e80fd1cafd3f7dce2c61b3f5fd5b5be64d",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Paused playback in the full player; the control changed from Pause to Play.",
+    "startPath": "/player",
+    "endPath": "/player",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Play",
+        "testId": "player-toggle"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "button",
+        "name": "Pause",
+        "testId": "player-toggle"
+      }
+    ],
+    "endWaitMs": 11370,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

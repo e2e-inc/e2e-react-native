@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T09:58:42.951Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Clear history\"",
+        "target": {
+          "role": "button",
+          "name": "Clear history"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/history.e2e.ts::listening%20history::clear%20listening%20history",
+      "targetId": "web",
+      "instructionDigest": "b253ca9e87c883aa6236c5ef9df25610c399037e282a4acd3bc3a128c693e082",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Cleared listening history. The History tab now shows “No history yet” and “Episodes you play will show up here.”",
+    "startPath": "/library",
+    "endPath": "/library",
+    "endAnchors": [
+      {
+        "text": "No history yet"
+      },
+      {
+        "text": "Episodes you play will show up here."
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Recently played"
+      },
+      {
+        "text": "Clear history"
+      },
+      {
+        "text": "Signal & Noise · TODAY"
+      },
+      {
+        "text": "Listening for Life on Europa"
+      },
+      {
+        "text": "Hiring Your First Ten People"
+      },
+      {
+        "role": "button",
+        "name": "Clear history"
+      },
+      {
+        "role": "button",
+        "name": "Episode The Agents Are Coming for Your Test Suite"
+      },
+      {
+        "role": "button",
+        "name": "Play The Agents Are Coming for Your Test Suite"
+      }
+    ],
+    "endWaitMs": 11337,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

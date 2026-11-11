@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T09:55:24.857Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Reviews\"",
+        "target": {
+          "role": "button",
+          "name": "Reviews"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/discovery.e2e.ts::discovery::show%20page::write%20a%20review",
+      "targetId": "web",
+      "instructionDigest": "6971b23562c8b4c83d100b78afcbe81a13c3c30968c2babeaa0cbac9996d9770",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Opened the Reviews tab on the Trail Notes show page; the Reviews tab is selected and review ratings and existing reviews are displayed.",
+    "startPath": "/show/trail-notes",
+    "endPath": "/show/trail-notes",
+    "endAnchors": [
+      {
+        "text": "4.9"
+      },
+      {
+        "text": "2.9K ratings"
+      },
+      {
+        "text": "Write a review"
+      },
+      {
+        "text": "Binged the whole archive"
+      },
+      {
+        "text": "Found this last month and caught up on everything. Instantly recommended it to friends."
+      },
+      {
+        "text": "Solid every week"
+      },
+      {
+        "text": "Consistent quality and great sound. Would love more listener Q&A episodes."
+      },
+      {
+        "text": "My commute essential"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Newest"
+      },
+      {
+        "text": "YESTERDAY"
+      },
+      {
+        "text": "Sunrise on the Ridge"
+      },
+      {
+        "text": "Thru-Hiking the Pacific Crest"
+      },
+      {
+        "text": "The Quiet of the Old Forest"
+      },
+      {
+        "text": "Leave No Trace, Explained"
+      },
+      {
+        "text": "Camping in the Desert"
+      },
+      {
+        "text": "What the Mountains Taught Me"
+      }
+    ],
+    "endWaitMs": 11092,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

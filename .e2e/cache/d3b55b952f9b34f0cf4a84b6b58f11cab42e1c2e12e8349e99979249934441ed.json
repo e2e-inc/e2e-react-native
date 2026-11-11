@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T09:53:08.274Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Play all\"",
+        "target": {
+          "role": "button",
+          "name": "Play all"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/playlists.e2e.ts::play%20a%20whole%20playlist",
+      "targetId": "web",
+      "instructionDigest": "02afdd089eb7ac56c6685ee5cd376baaa76dbe6c5c68ddcf2ad75cb747604f4c",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Tapped Play all. The app confirmed “Playing Morning commute,” and the mini-player now shows the playlist’s first episode, “Markets Rally as Rates Hold Steady,” playing.",
+    "startPath": "/playlist/commute",
+    "endPath": "/playlist/commute",
+    "endAnchors": [
+      {
+        "role": "alert",
+        "name": "Playing “Morning commute”"
+      },
+      {
+        "text": "The Daily Brief"
+      },
+      {
+        "text": "Playing “Morning commute”"
+      },
+      {
+        "role": "button",
+        "name": "Pause Markets Rally as Rates Hold Steady"
+      },
+      {
+        "role": "button",
+        "name": "Now playing: Markets Rally as Rates Hold Steady",
+        "testId": "mini-player"
+      },
+      {
+        "role": "button",
+        "name": "Pause",
+        "testId": "mini-player-toggle"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Signal & Noise"
+      },
+      {
+        "role": "button",
+        "name": "Play Markets Rally as Rates Hold Steady"
+      },
+      {
+        "role": "button",
+        "name": "Now playing: The Agents Are Coming for Your Test Suite",
+        "testId": "mini-player"
+      },
+      {
+        "role": "button",
+        "name": "Play",
+        "testId": "mini-player-toggle"
+      }
+    ],
+    "endWaitMs": 12273,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

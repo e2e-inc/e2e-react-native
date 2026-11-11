@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T09:52:32.109Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap tab \"Search\"",
+        "target": {
+          "role": "tab",
+          "name": "Search"
+        }
+      },
+      {
+        "name": "type",
+        "summary": "type \"Trail Notes\" into textbox \"Search podcasts\"",
+        "target": {
+          "role": "textbox",
+          "name": "Search podcasts",
+          "testId": "search-input",
+          "placeholder": "Shows, episodes, people"
+        },
+        "value": "Trail Notes"
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Trail Notes\"",
+        "target": {
+          "role": "button",
+          "name": "Trail Notes"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/discovery.e2e.ts::follow%20a%20show",
+      "targetId": "web",
+      "instructionDigest": "b74ac2db49ef4ea057de440eeef61634fcc63847b7a04ea38e525d24110f1380",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Opened Trail Notes from search. The Trail Notes show page is displayed with Hannah Frost and its episode list.",
+    "startPath": "/",
+    "endPath": "/show/trail-notes",
+    "endAnchors": [
+      {
+        "text": "TRAVEL"
+      },
+      {
+        "role": "heading",
+        "name": "Trail Notes"
+      },
+      {
+        "text": "Hannah Frost"
+      },
+      {
+        "text": "4.9 (2.9K) · 41K followers"
+      },
+      {
+        "text": "Field recordings and stories from mountains, forests, and long-distance trails. Put on your boots and come along."
+      },
+      {
+        "text": "More"
+      },
+      {
+        "text": "Episodes"
+      },
+      {
+        "text": "Reviews"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Good morning"
+      },
+      {
+        "text": "Alex"
+      },
+      {
+        "role": "button",
+        "name": "Featured: Signal & Noise"
+      },
+      {
+        "text": "FEATURED · TECHNOLOGY"
+      },
+      {
+        "text": "A weekly conversation about the technology shaping our lives. Maya Chen talks with founders, engineers, and researchers about AI, software, and the future of work."
+      },
+      {
+        "text": "Following"
+      },
+      {
+        "role": "button",
+        "name": "Featured: Deep Space Diaries"
+      },
+      {
+        "text": "FEATURED · SCIENCE"
+      }
+    ],
+    "endWaitMs": 11387,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

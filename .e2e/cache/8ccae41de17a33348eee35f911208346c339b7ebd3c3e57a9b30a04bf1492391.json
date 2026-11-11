@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T09:58:53.016Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap tab \"Library\"",
+        "target": {
+          "role": "tab",
+          "name": "Library"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"New playlist\"",
+        "target": {
+          "role": "button",
+          "name": "New playlist"
+        }
+      },
+      {
+        "name": "type",
+        "summary": "type \"Road trip\" into textbox \"Playlist name\"",
+        "target": {
+          "role": "textbox",
+          "name": "Playlist name",
+          "placeholder": "Playlist name"
+        },
+        "value": "Road trip"
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Create playlist\"",
+        "target": {
+          "role": "button",
+          "name": "Create playlist"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/playlists.e2e.ts::playlists::create%20a%20playlist",
+      "targetId": "web",
+      "instructionDigest": "ac42dd2e2e708e45018aab0b5923027114b5872f1ad62b36fe3a5bb0604a67f2",
+      "paramsDigest": "6ecdbea1452f714f19cd166e4f7a496048d36e6cdce5b57dc75cbf6584920813",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Created the playlist “Road trip” from Library; the app returned to Library and displayed the confirmation “Created ‘Road trip’.”",
+    "startPath": "/",
+    "endPath": "/library",
+    "endAnchors": [
+      {
+        "role": "alert",
+        "name": "Created “Road trip”"
+      },
+      {
+        "role": "heading",
+        "name": "Library"
+      },
+      {
+        "text": "Shows"
+      },
+      {
+        "text": "Saved"
+      },
+      {
+        "text": "Downloads"
+      },
+      {
+        "text": "Playlists"
+      },
+      {
+        "text": "History"
+      },
+      {
+        "text": "Up Next"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Good morning"
+      },
+      {
+        "text": "Alex"
+      },
+      {
+        "role": "button",
+        "name": "Featured: Signal & Noise"
+      },
+      {
+        "text": "FEATURED · TECHNOLOGY"
+      },
+      {
+        "text": "A weekly conversation about the technology shaping our lives. Maya Chen talks with founders, engineers, and researchers about AI, software, and the future of work."
+      },
+      {
+        "text": "Play latest"
+      },
+      {
+        "text": "Following"
+      },
+      {
+        "role": "button",
+        "name": "Featured: Deep Space Diaries"
+      }
+    ],
+    "endWaitMs": 11711,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T09:53:43.776Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Now playing: The Agents Are Coming for …\"",
+        "target": {
+          "role": "button",
+          "name": "Now playing: The Agents Are Coming for Your Test Suite",
+          "testId": "mini-player"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Open Up Next\"",
+        "target": {
+          "role": "button",
+          "name": "Open Up Next"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/queue.e2e.ts::play%20an%20episode%20from%20Up%20Next",
+      "targetId": "web",
+      "instructionDigest": "6ccc25d3b112d2d9794a5549c0bf96f30505380ae0df459a3846260a73f828a2",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Opened the Up Next queue. It shows the currently playing episode and queued episodes “Testing Mobile Apps End to End” and “The Perfect Weeknight Pasta”.",
+    "startPath": "/",
+    "endPath": "/queue",
+    "endAnchors": [
+      {
+        "text": "Up Next"
+      },
+      {
+        "text": "Clear"
+      },
+      {
+        "text": "NOW PLAYING"
+      },
+      {
+        "text": "Paused · Signal & Noise"
+      },
+      {
+        "text": "QUEUE"
+      },
+      {
+        "text": "Find something to play"
+      },
+      {
+        "role": "button",
+        "name": "Back"
+      },
+      {
+        "role": "button",
+        "name": "Clear"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Good morning"
+      },
+      {
+        "text": "Alex"
+      },
+      {
+        "role": "button",
+        "name": "Featured: Signal & Noise"
+      },
+      {
+        "text": "FEATURED · TECHNOLOGY"
+      },
+      {
+        "text": "Signal & Noise"
+      },
+      {
+        "text": "A weekly conversation about the technology shaping our lives. Maya Chen talks with founders, engineers, and researchers about AI, software, and the future of work."
+      },
+      {
+        "text": "Play latest"
+      },
+      {
+        "text": "Following"
+      }
+    ],
+    "endWaitMs": 11621,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

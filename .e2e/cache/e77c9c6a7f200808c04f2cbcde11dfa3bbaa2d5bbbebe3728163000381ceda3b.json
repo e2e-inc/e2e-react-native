@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T10:06:46.860Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Back\"",
+        "target": {
+          "role": "button",
+          "name": "Back"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap tab \"Library\"",
+        "target": {
+          "role": "tab",
+          "name": "Library"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/show.e2e.ts::show%20page::find%20a%20followed%20show%20in%20the%20Library",
+      "targetId": "web",
+      "instructionDigest": "5cb5392b589f76617f80c9ebf3f915b9a2fd8578dbbb7d20cba19ba545ca94ef",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Opened Library with the Shows tab selected. The followed show Trail Notes is visible in the shows list, and the app remains on that list.",
+    "startPath": "/show/trail-notes",
+    "endPath": "/library",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "Library"
+      },
+      {
+        "text": "Shows"
+      },
+      {
+        "text": "Saved"
+      },
+      {
+        "text": "Downloads"
+      },
+      {
+        "text": "Playlists"
+      },
+      {
+        "text": "History"
+      },
+      {
+        "text": "Up Next"
+      },
+      {
+        "text": "2 episodes queued"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "alert",
+        "name": "Following Trail Notes"
+      },
+      {
+        "text": "TRAVEL"
+      },
+      {
+        "role": "heading",
+        "name": "Trail Notes"
+      },
+      {
+        "text": "Hannah Frost"
+      },
+      {
+        "text": "4.9 (2.9K) · 41K followers"
+      },
+      {
+        "text": "Following"
+      },
+      {
+        "text": "Play latest"
+      },
+      {
+        "text": "Field recordings and stories from mountains, forests, and long-distance trails. Put on your boots and come along."
+      }
+    ],
+    "endWaitMs": 11482,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

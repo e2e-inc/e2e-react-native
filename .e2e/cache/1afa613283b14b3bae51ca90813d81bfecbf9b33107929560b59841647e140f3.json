@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T09:54:53.046Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap tab \"Search\"",
+        "target": {
+          "role": "tab",
+          "name": "Search"
+        }
+      },
+      {
+        "name": "type",
+        "summary": "type \"trail\" into textbox \"Search podcasts\"",
+        "target": {
+          "role": "textbox",
+          "name": "Search podcasts",
+          "testId": "search-input",
+          "placeholder": "Shows, episodes, people"
+        },
+        "value": "trail"
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/discovery.e2e.ts::discovery::search%20finds%20a%20show%20by%20name",
+      "targetId": "web",
+      "instructionDigest": "1c460260dd96c08ae274202ec6b8034eefb9014592ad0d848c34582ddede9c12",
+      "paramsDigest": "38a48fd99dd063aac58e237baec40d8cd1a03cc9ceb5bce3d9625a8232fb2a72",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Searched for “trail”; the results show the matching show “Trail Notes” by Hannah Frost.",
+    "startPath": "/",
+    "endPath": "/search",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "Search"
+      },
+      {
+        "role": "textbox",
+        "name": "Search podcasts",
+        "testId": "search-input",
+        "placeholder": "Shows, episodes, people",
+        "value": "trail"
+      },
+      {
+        "role": "heading",
+        "name": "Shows"
+      },
+      {
+        "text": "Trail Notes"
+      },
+      {
+        "text": "Hannah Frost"
+      },
+      {
+        "role": "heading",
+        "name": "Episodes"
+      },
+      {
+        "text": "Trail Notes · YESTERDAY"
+      },
+      {
+        "text": "Sunrise on the Ridge"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Good morning"
+      },
+      {
+        "text": "Alex"
+      },
+      {
+        "role": "button",
+        "name": "Featured: Signal & Noise"
+      },
+      {
+        "text": "FEATURED · TECHNOLOGY"
+      },
+      {
+        "text": "A weekly conversation about the technology shaping our lives. Maya Chen talks with founders, engineers, and researchers about AI, software, and the future of work."
+      },
+      {
+        "text": "Play latest"
+      },
+      {
+        "text": "Following"
+      },
+      {
+        "role": "button",
+        "name": "Featured: Deep Space Diaries"
+      }
+    ],
+    "endWaitMs": 11347,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

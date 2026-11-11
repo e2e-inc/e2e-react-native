@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T09:59:02.612Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Now playing: The Agents Are Coming for …\"",
+        "target": {
+          "role": "button",
+          "name": "Now playing: The Agents Are Coming for Your Test Suite",
+          "testId": "mini-player"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/player.e2e.ts::full%20player::change%20the%20playback%20speed",
+      "targetId": "web",
+      "instructionDigest": "0399ae8ebd8e0836a97c2a5c9adbb85d6fc0585f0e54580c54bd9d87d5017973",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Opened the full player for “The Agents Are Coming for Your Test Suite.” The player screen is displayed with playback speed currently at 1×.",
+    "startPath": "/",
+    "endPath": "/player",
+    "endAnchors": [
+      {
+        "text": "NOW PLAYING"
+      },
+      {
+        "text": "Chapter · The big idea"
+      },
+      {
+        "text": "1×"
+      },
+      {
+        "text": "UP NEXT"
+      },
+      {
+        "text": "CHAPTERS"
+      },
+      {
+        "text": "Intro"
+      },
+      {
+        "text": "The big idea"
+      },
+      {
+        "text": "Deep dive"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Good morning"
+      },
+      {
+        "text": "Alex"
+      },
+      {
+        "role": "button",
+        "name": "Featured: Signal & Noise"
+      },
+      {
+        "text": "FEATURED · TECHNOLOGY"
+      },
+      {
+        "text": "A weekly conversation about the technology shaping our lives. Maya Chen talks with founders, engineers, and researchers about AI, software, and the future of work."
+      },
+      {
+        "text": "Play latest"
+      },
+      {
+        "text": "Following"
+      },
+      {
+        "role": "button",
+        "name": "Featured: Deep Space Diaries"
+      }
+    ],
+    "endWaitMs": 11313,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T09:59:42.036Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Share show\"",
+        "target": {
+          "role": "button",
+          "name": "Share show"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Copy link\"",
+        "target": {
+          "role": "button",
+          "name": "Copy link"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/show.e2e.ts::show%20page::share%20a%20show",
+      "targetId": "web",
+      "instructionDigest": "89bca139b015be4c954d5e8a70032341a409ce52b97691de4f957e1efd9c75a4",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Opened the show’s share sheet and tapped Copy link. The app returned to Trail Notes and displayed the “Link copied” confirmation.",
+    "startPath": "/show/trail-notes",
+    "endPath": "/show/trail-notes",
+    "endAnchors": [
+      {
+        "role": "alert",
+        "name": "Link copied"
+      },
+      {
+        "text": "Link copied"
+      }
+    ],
+    "endWaitMs": 11699,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

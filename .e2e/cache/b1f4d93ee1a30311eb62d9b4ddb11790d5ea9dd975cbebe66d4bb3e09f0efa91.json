@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T09:55:24.858Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Write a review\"",
+        "target": {
+          "role": "button",
+          "name": "Write a review"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"5 stars\"",
+        "target": {
+          "role": "button",
+          "name": "5 stars"
+        }
+      },
+      {
+        "name": "type",
+        "summary": "type \"Perfect for long walks\" into textbox \"Review title\"",
+        "target": {
+          "role": "textbox",
+          "name": "Review title",
+          "placeholder": "Title"
+        },
+        "value": "Perfect for long walks"
+      },
+      {
+        "name": "type",
+        "summary": "type \"Calm, beautiful field recordings.\" into textbox \"Review\"",
+        "target": {
+          "role": "textbox",
+          "name": "Review",
+          "testId": "review-body",
+          "placeholder": "What did you think? (optional)"
+        },
+        "value": "Calm, beautiful field recordings."
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Submit review\"",
+        "target": {
+          "role": "button",
+          "name": "Submit review"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/discovery.e2e.ts::discovery::show%20page::write%20a%20review",
+      "targetId": "web",
+      "instructionDigest": "30c47b829fb887a0bcd0b6692129d1bc0e50ec7658456c25d0ddf3d2b33c7827",
+      "paramsDigest": "21ec11a54881f47d9d9e7d54bd6ea718b688abf4d1703e7651a1171bcf0bb174",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Submitted the 5-star review for Trail Notes. The Reviews tab now shows “Perfect for long walks” with the body “Calm, beautiful field recordings.” and a “Thanks for your review!” confirmation.",
+    "startPath": "/show/trail-notes",
+    "endPath": "/show/trail-notes",
+    "endAnchors": [
+      {
+        "role": "alert",
+        "name": "Thanks for your review!"
+      },
+      {
+        "text": "Edit review"
+      },
+      {
+        "text": "You · Today"
+      },
+      {
+        "text": "Perfect for long walks"
+      },
+      {
+        "text": "Calm, beautiful field recordings."
+      },
+      {
+        "text": "Thanks for your review!"
+      },
+      {
+        "role": "button",
+        "name": "Edit review"
+      },
+      {
+        "name": "Review by You"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Write a review"
+      },
+      {
+        "role": "button",
+        "name": "Write a review"
+      }
+    ],
+    "endWaitMs": 11500,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

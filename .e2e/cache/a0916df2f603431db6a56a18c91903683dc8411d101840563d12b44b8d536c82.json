@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T09:55:14.304Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Back\"",
+        "target": {
+          "role": "button",
+          "name": "Back"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap tab \"Library\"",
+        "target": {
+          "role": "tab",
+          "name": "Library"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Downloads\"",
+        "target": {
+          "role": "button",
+          "name": "Downloads"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/episode.e2e.ts::episode%20page::download%20an%20episode",
+      "targetId": "web",
+      "instructionDigest": "5527c7ea3d21fb22062619c1168d433bc3b59889867952d830a6aa020a5059e1",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Opened Library and selected Downloads. The Downloads view is displayed and lists “Listening for Life on Europa” as downloaded.",
+    "startPath": "/episode/deep-space-diaries-100",
+    "endPath": "/library",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "Library"
+      },
+      {
+        "text": "Shows"
+      },
+      {
+        "text": "Saved"
+      },
+      {
+        "text": "Downloads"
+      },
+      {
+        "text": "Playlists"
+      },
+      {
+        "text": "History"
+      },
+      {
+        "text": "2 episodes queued"
+      },
+      {
+        "text": "2 episodes · 83 MB on this device"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Deep Space Diaries"
+      },
+      {
+        "role": "heading",
+        "name": "Listening for Life on Europa"
+      },
+      {
+        "text": "Save"
+      },
+      {
+        "text": "Downloaded"
+      },
+      {
+        "text": "Playlist"
+      },
+      {
+        "text": "Share"
+      },
+      {
+        "text": "Mark as played"
+      },
+      {
+        "text": "ABOUT THIS EPISODE"
+      }
+    ],
+    "endWaitMs": 11708,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}
