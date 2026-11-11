@@ -208,7 +208,7 @@ export default function PlayerScreen() {
                   onPress={() => player.seek(item.start)}
                   accessibilityRole="button"
                   accessibilityLabel={`Jump to ${item.title}`}
-                  accessibilityState={{ selected: active }}
+                  aria-selected={active}
                   style={[styles.chapterRow, active && styles.chapterRowActive]}
                 >
                   <Text style={[type.headline, { flex: 1 }, active && { color: colors.primaryText }]}>{item.title}</Text>

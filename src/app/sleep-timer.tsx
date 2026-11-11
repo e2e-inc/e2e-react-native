@@ -40,7 +40,7 @@ export default function SleepTimerSheet() {
             }}
             accessibilityRole="button"
             accessibilityLabel={option.label}
-            accessibilityState={{ selected }}
+            aria-selected={selected}
             style={[styles.option, selected && styles.optionSelected]}
           >
             <Text style={[type.headline, selected && { color: colors.primaryText }]}>{option.label}</Text>

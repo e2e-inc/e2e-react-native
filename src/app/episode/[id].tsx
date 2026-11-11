@@ -204,7 +204,7 @@ function Action({
       onPress={onPress}
       accessibilityRole="button"
       accessibilityLabel={label}
-      accessibilityState={{ selected: active }}
+      aria-selected={active}
       style={({ pressed }) => [styles.action, pressed && { opacity: 0.6 }]}
     >
       <View style={[styles.actionIcon, active && { backgroundColor: colors.primarySoft }]}>

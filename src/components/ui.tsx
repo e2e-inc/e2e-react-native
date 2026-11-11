@@ -82,7 +82,8 @@ export function IconButton({
       onPress={onPress}
       accessibilityRole="button"
       accessibilityLabel={label}
-      accessibilityState={{ selected: active, disabled }}
+      aria-selected={active}
+      aria-disabled={disabled}
       disabled={disabled}
       testID={testID}
       hitSlop={6}
@@ -155,7 +156,7 @@ export function Chip({
       onPress={onPress}
       accessibilityRole="button"
       accessibilityLabel={label}
-      accessibilityState={{ selected }}
+      aria-selected={selected}
       style={[styles.chip, selected && styles.chipSelected]}
     >
       <Text style={[styles.chipText, selected && styles.chipTextSelected]}>{label}</Text>

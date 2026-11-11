@@ -28,7 +28,7 @@ export function StarInput({ value, onChange }: { value: number; onChange: (value
           onPress={() => onChange(star)}
           accessibilityRole="button"
           accessibilityLabel={`${star} star${star === 1 ? '' : 's'}`}
-          accessibilityState={{ selected: value === star }}
+          aria-selected={value === star}
           hitSlop={4}
         >
           <Star size={36} color={colors.star} fill={value >= star ? colors.star : 'transparent'} strokeWidth={1.8} />

@@ -29,7 +29,7 @@ export default function AddToPlaylistSheet() {
             onPress={() => toggleInPlaylist(playlist.id, episode.id)}
             accessibilityRole="checkbox"
             accessibilityLabel={playlist.name}
-            accessibilityState={{ checked: included }}
+            aria-checked={included}
             style={[styles.row, included && styles.rowSelected]}
           >
             <View style={styles.icon}>
