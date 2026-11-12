@@ -4,7 +4,7 @@ describe('show page', () => {
   beforeEach(async ({ app, agent, screen }) => {
     await app.open();
     await agent.act('open the Trail Notes show from Search');
-    await expect(screen.getByRole('heading', 'Trail Notes')).toBeVisible();
+    await expect(screen.getByTestId('show-title')).toHaveText('Trail Notes');
   });
 
   test('follow a show', async ({ agent, screen }) => {

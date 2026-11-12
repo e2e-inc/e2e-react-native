@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T11:08:46.864Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap tab \"Profile\"",
+        "target": {
+          "role": "tab",
+          "name": "Profile"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Comedy\"",
+        "target": {
+          "role": "button",
+          "name": "Comedy"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/interests.e2e.ts::interests::tailor%20Home%20to%20an%20added%20interest",
+      "targetId": "ios",
+      "instructionDigest": "41fd4388fce5f87feec43407b6a504203ff29526ed79a841b1c5fc89b718b39c",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Opened the profile and selected Comedy under Your interests. Comedy now appears selected alongside the existing interests.",
+    "startPath": "dev.e2e.podcasts",
+    "endPath": "dev.e2e.podcasts",
+    "endAnchors": [
+      {
+        "role": "image",
+        "testId": "AdditionalDimmingOverlay"
+      },
+      {
+        "role": "other",
+        "name": "Hours listened: 128.7"
+      },
+      {
+        "role": "other",
+        "name": "Episodes finished: 48"
+      },
+      {
+        "role": "other",
+        "name": "Following: 4"
+      },
+      {
+        "role": "button",
+        "name": "Technology",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "News"
+      },
+      {
+        "role": "button",
+        "name": "Science",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "Business"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "image",
+        "testId": "SplashScreenLogo"
+      },
+      {
+        "role": "text",
+        "name": "Downloading 100%…"
+      }
+    ],
+    "endWaitMs": 13176,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "ios",
+      "engineName": "mobile",
+      "engineSpiVersion": 1,
+      "appIdentity": "a89dd5418179517a9af76075eec0c88401145f0746036c0eb4d4d3d125260441",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

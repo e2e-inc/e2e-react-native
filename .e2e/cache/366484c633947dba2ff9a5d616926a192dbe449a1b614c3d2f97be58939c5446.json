@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T11:10:44.740Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap tab \"Profile\" in \"Home\"",
+        "target": {
+          "role": "tab",
+          "name": "Profile",
+          "within": "Home"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Comedy\" in \"Alex Morgan\"",
+        "target": {
+          "role": "button",
+          "name": "Comedy",
+          "within": "Alex Morgan"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/interests.e2e.ts::interests::tailor%20Home%20to%20an%20added%20interest",
+      "targetId": "android",
+      "instructionDigest": "41fd4388fce5f87feec43407b6a504203ff29526ed79a841b1c5fc89b718b39c",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Selected Comedy in Your interests on the profile. The latest screen shows Comedy marked selected.",
+    "startPath": "dev.e2e.podcasts",
+    "endPath": "dev.e2e.podcasts",
+    "endAnchors": [
+      {
+        "role": "text",
+        "name": "Alex Morgan"
+      },
+      {
+        "role": "text",
+        "name": "@alexlistens"
+      },
+      {
+        "role": "group",
+        "name": "Hours listened: 128.7"
+      },
+      {
+        "role": "text",
+        "name": "128.7"
+      },
+      {
+        "role": "text",
+        "name": "Hours listened"
+      },
+      {
+        "role": "group",
+        "name": "Episodes finished: 48"
+      },
+      {
+        "role": "text",
+        "name": "Episodes finished"
+      },
+      {
+        "role": "group",
+        "name": "Following: 4"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "text",
+        "name": "Good afternoon"
+      },
+      {
+        "role": "text",
+        "name": "Alex"
+      },
+      {
+        "role": "button",
+        "name": "Featured: Signal & Noise"
+      },
+      {
+        "role": "text",
+        "name": "FEATURED · TECHNOLOGY"
+      },
+      {
+        "role": "text",
+        "name": "A weekly conversation about the technology shaping our lives. Maya Chen talks with founders, engineers, and researchers about AI, software, and the future of work."
+      },
+      {
+        "role": "text",
+        "name": "Play latest"
+      },
+      {
+        "role": "button",
+        "name": "Featured: Deep Space Diaries"
+      },
+      {
+        "role": "heading",
+        "name": "Continue listening"
+      }
+    ],
+    "endWaitMs": 11531,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "android",
+      "engineName": "mobile",
+      "engineSpiVersion": 1,
+      "appIdentity": "a89dd5418179517a9af76075eec0c88401145f0746036c0eb4d4d3d125260441",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

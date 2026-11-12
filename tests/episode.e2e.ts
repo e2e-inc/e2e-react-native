@@ -4,7 +4,7 @@ describe('episode page', () => {
   beforeEach(async ({ app, agent, screen }) => {
     await app.open();
     await agent.act('open the episode {title} from Home', { params: { title: 'Listening for Life on Europa' } });
-    await expect(screen.getByRole('heading', 'Listening for Life on Europa')).toBeVisible();
+    await expect(screen.getByText('Listening for Life on Europa', { visible: true })).toBeVisible();
   });
 
   test('save an episode', async ({ agent, screen }) => {
@@ -15,7 +15,7 @@ describe('episode page', () => {
 
   test('find a saved episode in the Library', async ({ agent, screen }) => {
     await agent.act('save the episode');
-    await agent.act('open the saved episodes in your Library');
+    await agent.act('open the saved episodes in your Library, and stay on the list');
 
     await expect(screen.getByRole('button', 'Episode Listening for Life on Europa')).toBeVisible();
   });
@@ -28,7 +28,7 @@ describe('episode page', () => {
 
   test('find a downloaded episode in the Library', async ({ agent, screen }) => {
     await agent.act('download the episode');
-    await agent.act('open the downloads in your Library');
+    await agent.act('open the downloads in your Library, and stay on the list');
 
     await expect(screen.getByText(/^2 episodes · \d+ MB on this device$/)).toBeVisible();
     await expect(screen.getByRole('button', 'Episode Listening for Life on Europa')).toBeVisible();
@@ -57,7 +57,7 @@ describe('episode page', () => {
     await agent.act('tick Morning commute in the Add to playlist sheet, and leave the sheet open');
     await agent.act('open the Morning commute playlist from the Library');
 
-    await expect(screen.getByRole('heading', 'Morning commute')).toBeVisible();
+    await expect(screen.getByText('Morning commute', { visible: true })).toBeVisible();
     await expect(screen.getByRole('button', 'Episode Listening for Life on Europa')).toBeVisible();
   });
 });

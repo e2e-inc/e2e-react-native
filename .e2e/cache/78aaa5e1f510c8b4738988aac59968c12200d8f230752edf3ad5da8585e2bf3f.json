@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T10:36:32.396Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Save\" in \"Deep Space Diaries\"",
+        "target": {
+          "role": "button",
+          "name": "Save",
+          "within": "Deep Space Diaries"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/episode.e2e.ts::episode%20page::find%20a%20saved%20episode%20in%20the%20Library",
+      "targetId": "android",
+      "instructionDigest": "d9650f71836789735dab025e2729ca2c9827aba6f80f9c710604aab51a0b76a6",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Saved “Listening for Life on Europa”; the episode page now shows the “Saved” button selected.",
+    "startPath": "dev.e2e.podcasts",
+    "endPath": "dev.e2e.podcasts",
+    "endAnchors": [
+      {
+        "role": "text",
+        "name": "Saved",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "Saved",
+        "states": [
+          "selected"
+        ]
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "text",
+        "name": "Save"
+      },
+      {
+        "role": "text",
+        "name": "!"
+      },
+      {
+        "role": "text",
+        "name": "Open debugger to view warnings."
+      },
+      {
+        "role": "button",
+        "name": "Save"
+      },
+      {
+        "role": "group",
+        "name": "!, Open debugger to view warnings."
+      }
+    ],
+    "endWaitMs": 11498,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "android",
+      "engineName": "mobile",
+      "engineSpiVersion": 1,
+      "appIdentity": "a89dd5418179517a9af76075eec0c88401145f0746036c0eb4d4d3d125260441",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

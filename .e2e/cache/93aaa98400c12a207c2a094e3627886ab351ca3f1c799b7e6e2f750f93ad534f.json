@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T11:44:50.052Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue Listening for Life on Europa\" in \"Listening for Life on Europa\"",
+        "target": {
+          "role": "button",
+          "name": "Continue Listening for Life on Europa",
+          "within": "Listening for Life on Europa"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/episode.e2e.ts::episode%20page::mark%20an%20episode%20as%20played",
+      "targetId": "android",
+      "instructionDigest": "d7be5c9a28efea027968c0195b6a18ee243b57bc1fd4a06e4f8a7dc831edefee",
+      "paramsDigest": "cef67c3e4e813804476808aebfb1eace659d935bcc48083f5e9ac983988dacbe",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Opened “Listening for Life on Europa” from Home. The episode page is displayed with its title and a “Mark as played” button.",
+    "startPath": "dev.e2e.podcasts",
+    "endPath": "dev.e2e.podcasts",
+    "endAnchors": [
+      {
+        "role": "text",
+        "name": "Deep Space Diaries"
+      },
+      {
+        "role": "heading",
+        "name": "Listening for Life on Europa"
+      },
+      {
+        "role": "text",
+        "name": "Save"
+      },
+      {
+        "role": "text",
+        "name": "Download"
+      },
+      {
+        "role": "text",
+        "name": "Up Next"
+      },
+      {
+        "role": "text",
+        "name": "Playlist"
+      },
+      {
+        "role": "text",
+        "name": "Share"
+      },
+      {
+        "role": "text",
+        "name": "Mark as played"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "text",
+        "name": "Good afternoon"
+      },
+      {
+        "role": "text",
+        "name": "Alex"
+      },
+      {
+        "role": "button",
+        "name": "Featured: Signal & Noise"
+      },
+      {
+        "role": "text",
+        "name": "FEATURED · TECHNOLOGY"
+      },
+      {
+        "role": "text",
+        "name": "A weekly conversation about the technology shaping our lives. Maya Chen talks with founders, engineers, and researchers about AI, software, and the future of work."
+      },
+      {
+        "role": "text",
+        "name": "Play latest"
+      },
+      {
+        "role": "text",
+        "name": "Following"
+      },
+      {
+        "role": "button",
+        "name": "Featured: Deep Space Diaries"
+      }
+    ],
+    "endWaitMs": 11789,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "android",
+      "engineName": "mobile",
+      "engineSpiVersion": 1,
+      "appIdentity": "a89dd5418179517a9af76075eec0c88401145f0746036c0eb4d4d3d125260441",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

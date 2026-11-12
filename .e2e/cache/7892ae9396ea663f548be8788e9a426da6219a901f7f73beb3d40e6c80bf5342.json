@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T11:14:09.813Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Back\"",
+        "target": {
+          "role": "button",
+          "name": "Back"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap tab \"Library\"",
+        "target": {
+          "role": "tab",
+          "name": "Library"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Saved\"",
+        "target": {
+          "role": "button",
+          "name": "Saved"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/episode.e2e.ts::episode%20page::find%20a%20saved%20episode%20in%20the%20Library",
+      "targetId": "web",
+      "instructionDigest": "2a3bbe2e843cd37d8e7e71a25fb08ae7513ed6a0ddefddcb9fbb2055e370a639",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Opened Library and selected Saved. The saved-episodes list is displayed with “Listening for Life on Europa” visible; stayed on the list.",
+    "startPath": "/episode/deep-space-diaries-100",
+    "endPath": "/library",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "Library"
+      },
+      {
+        "text": "Shows"
+      },
+      {
+        "text": "Downloads"
+      },
+      {
+        "text": "Playlists"
+      },
+      {
+        "text": "History"
+      },
+      {
+        "text": "2 episodes queued"
+      },
+      {
+        "text": "Listening for Life on Europa"
+      },
+      {
+        "text": "The Telescope That Saw the Dawn of Time"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "alert",
+        "name": "Saved to your library"
+      },
+      {
+        "text": "Deep Space Diaries"
+      },
+      {
+        "role": "heading",
+        "name": "Listening for Life on Europa"
+      },
+      {
+        "text": "Download"
+      },
+      {
+        "text": "Playlist"
+      },
+      {
+        "text": "Share"
+      },
+      {
+        "text": "Mark as played"
+      },
+      {
+        "text": "ABOUT THIS EPISODE"
+      }
+    ],
+    "endWaitMs": 11603,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f60cdea9f65f54a4d97523c74b2a1b84779063d1bd17a280b254aa154ef57cc0",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

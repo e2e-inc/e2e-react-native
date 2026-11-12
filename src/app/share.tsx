@@ -38,7 +38,7 @@ export default function ShareSheet() {
 
   return (
     <ScrollView style={styles.sheet} contentContainerStyle={{ padding: 24, gap: 20 }}>
-      <Text style={type.title} accessibilityRole="header">
+      <Text style={type.title} accessibilityRole="header" testID="share-title">
         Share {episode ? 'episode' : 'show'}
       </Text>
 

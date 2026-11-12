@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T10:36:32.396Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Back\" in \"Deep Space Diaries\"",
+        "target": {
+          "role": "button",
+          "name": "Back",
+          "within": "Deep Space Diaries"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap tab \"Library\" in \"Home\"",
+        "target": {
+          "role": "tab",
+          "name": "Library",
+          "within": "Home"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Saved\" in \"Shows\"",
+        "target": {
+          "role": "button",
+          "name": "Saved",
+          "within": "Shows"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/episode.e2e.ts::episode%20page::find%20a%20saved%20episode%20in%20the%20Library",
+      "targetId": "android",
+      "instructionDigest": "e06c85289b208235727e801b334181a81285a507b11469a2357d42dca5f3e585",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Opened Library and selected Saved. The saved episodes list shows “Listening for Life on Europa” by Deep Space Diaries.",
+    "startPath": "dev.e2e.podcasts",
+    "endPath": "dev.e2e.podcasts",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "Library"
+      },
+      {
+        "role": "text",
+        "name": "Shows"
+      },
+      {
+        "role": "text",
+        "name": "Downloads"
+      },
+      {
+        "role": "text",
+        "name": "Playlists"
+      },
+      {
+        "role": "text",
+        "name": "History"
+      },
+      {
+        "role": "text",
+        "name": "2 episodes queued"
+      },
+      {
+        "role": "text",
+        "name": "Listening for Life on Europa"
+      },
+      {
+        "role": "text",
+        "name": "The Telescope That Saw the Dawn of Time"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "text",
+        "name": "Deep Space Diaries"
+      },
+      {
+        "role": "heading",
+        "name": "Listening for Life on Europa"
+      },
+      {
+        "role": "text",
+        "name": "Download"
+      },
+      {
+        "role": "text",
+        "name": "Playlist"
+      },
+      {
+        "role": "text",
+        "name": "Share"
+      },
+      {
+        "role": "text",
+        "name": "Mark as played"
+      },
+      {
+        "role": "text",
+        "name": "ABOUT THIS EPISODE"
+      },
+      {
+        "role": "text",
+        "name": "Dr. Lena Okafor digs into “Listening for Life on Europa”. Astrophysicist Lena Okafor takes you on a tour of the cosmos, from black holes to the search for life on distant moons. In this episode: what changed, why it matters, and what to watch next."
+      }
+    ],
+    "endWaitMs": 11659,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "android",
+      "engineName": "mobile",
+      "engineSpiVersion": 1,
+      "appIdentity": "a89dd5418179517a9af76075eec0c88401145f0746036c0eb4d4d3d125260441",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

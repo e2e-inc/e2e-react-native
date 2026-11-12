@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-11T12:04:34.527Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Write a review\" in \"TRAVEL\"",
+        "target": {
+          "role": "button",
+          "name": "Write a review",
+          "within": "TRAVEL"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"5 stars\" in \"Rate Trail Notes\"",
+        "target": {
+          "role": "button",
+          "name": "5 stars",
+          "within": "Rate Trail Notes"
+        }
+      },
+      {
+        "name": "type",
+        "summary": "type \"Perfect for long walks\" into textbox \"Review title\" in \"Rate Trail Notes\"",
+        "target": {
+          "role": "textbox",
+          "name": "Review title",
+          "text": "Title",
+          "placeholder": "Title",
+          "within": "Rate Trail Notes"
+        },
+        "value": "Perfect for long walks"
+      },
+      {
+        "name": "type",
+        "summary": "type \"Calm, beautiful field recordings.\" into textbox \"Review\" in \"Rate Trail Notes\"",
+        "target": {
+          "role": "textbox",
+          "name": "Review",
+          "text": "What did you think? (optional)",
+          "testId": "review-body",
+          "placeholder": "What did you think? (optional)",
+          "selector": "id=review-body",
+          "within": "Rate Trail Notes"
+        },
+        "value": "Calm, beautiful field recordings."
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Submit review\" in \"Rate Trail Notes\"",
+        "target": {
+          "role": "button",
+          "name": "Submit review",
+          "within": "Rate Trail Notes"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/show.e2e.ts::show%20page::write%20a%20review",
+      "targetId": "android",
+      "instructionDigest": "30c47b829fb887a0bcd0b6692129d1bc0e50ec7658456c25d0ddf3d2b33c7827",
+      "paramsDigest": "21ec11a54881f47d9d9e7d54bd6ea718b688abf4d1703e7651a1171bcf0bb174",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "gateway",
+      "model": "openai/gpt-6-luna-fast"
+    },
+    "summary": "Submitted a 5-star review for Trail Notes. The Reviews screen now shows “Review by You” with the title “Perfect for long walks” and body “Calm, beautiful field recordings.”",
+    "startPath": "dev.e2e.podcasts",
+    "endPath": "dev.e2e.podcasts",
+    "endAnchors": [
+      {
+        "role": "text",
+        "name": "Edit review"
+      },
+      {
+        "role": "group",
+        "name": "Review by You"
+      },
+      {
+        "role": "text",
+        "name": "You · Today"
+      },
+      {
+        "role": "text",
+        "name": "Perfect for long walks"
+      },
+      {
+        "role": "text",
+        "name": "Calm, beautiful field recordings."
+      },
+      {
+        "role": "button",
+        "name": "Edit review"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "text",
+        "name": "Write a review"
+      },
+      {
+        "role": "text",
+        "name": "Binged the whole archive"
+      },
+      {
+        "role": "text",
+        "name": "Found this last month and caught up on everything. Instantly recommended it to friends."
+      },
+      {
+        "role": "button",
+        "name": "Write a review"
+      }
+    ],
+    "endWaitMs": 11926,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "7cab318f93ef4e64c293bb54e144231dbbc6ee641d59121b8c1fbfdf3c414c9c",
+      "platform": "android",
+      "engineName": "mobile",
+      "engineSpiVersion": 1,
+      "appIdentity": "a89dd5418179517a9af76075eec0c88401145f0746036c0eb4d4d3d125260441",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

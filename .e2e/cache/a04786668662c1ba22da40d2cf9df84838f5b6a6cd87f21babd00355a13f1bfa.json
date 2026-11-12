@@ -1,6 +1,6 @@
 {
   "schemaVersion": "trace-1",
-  "createdAt": "2026-11-11T10:03:38.370Z",
+  "createdAt": "2026-11-11T11:03:20.257Z",
   "payload": {
     "actions": [
       {
@@ -28,12 +28,12 @@
       "provider": "gateway",
       "model": "openai/gpt-6-luna-fast"
     },
-    "summary": "Navigated to Home. The Home screen is open and shows a personalized “Because you like Comedy” recommendation for Laugh Track.",
+    "summary": "Went to Home. Home is selected and the personalized section “Because you like Comedy” shows Laugh Track.",
     "startPath": "/profile",
     "endPath": "/",
     "endAnchors": [
       {
-        "text": "Good morning"
+        "text": "Good afternoon"
       },
       {
         "text": "Alex"
@@ -85,7 +85,7 @@
         "text": "T"
       }
     ],
-    "endWaitMs": 11617,
+    "endWaitMs": 11792,
     "keyedBy": {
       "cacheSchema": "trace-1",
       "policyVersion": "conservative/6",

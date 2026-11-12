@@ -1,6 +1,6 @@
 {
   "schemaVersion": "trace-1",
-  "createdAt": "2026-11-11T10:03:31.255Z",
+  "createdAt": "2026-11-11T11:00:05.771Z",
   "payload": {
     "actions": [
       {
@@ -36,7 +36,7 @@
       "provider": "gateway",
       "model": "openai/gpt-6-luna-fast"
     },
-    "summary": "Opened the profile and selected Comedy under Your interests; Comedy now appears selected.",
+    "summary": "Comedy is shown as selected under Your interests on the Profile page, confirming it was added.",
     "startPath": "/",
     "endPath": "/profile",
     "endAnchors": [
@@ -67,7 +67,7 @@
     ],
     "goneAnchors": [
       {
-        "text": "Good morning"
+        "text": "Good afternoon"
       },
       {
         "text": "Alex"
@@ -93,7 +93,7 @@
         "text": "FEATURED · SCIENCE"
       }
     ],
-    "endWaitMs": 12909,
+    "endWaitMs": 10114,
     "keyedBy": {
       "cacheSchema": "trace-1",
       "policyVersion": "conservative/6",

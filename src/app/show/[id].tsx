@@ -54,7 +54,7 @@ export default function ShowScreen() {
           />
           <View style={styles.heroBody}>
             <Text style={styles.category}>{categoryById[show.categoryId].name.toUpperCase()}</Text>
-            <Text style={type.hero} accessibilityRole="header">
+            <Text style={type.hero} accessibilityRole="header" testID="show-title">
               {show.title}
             </Text>
             <Text style={[type.headline, { color: colors.textSecondary }]}>{show.author}</Text>

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "trace-1",
-  "createdAt": "2026-11-11T10:03:55.459Z",
+  "createdAt": "2026-11-11T11:04:13.161Z",
   "payload": {
     "actions": [
       {
@@ -28,7 +28,7 @@
       "provider": "gateway",
       "model": "openai/gpt-6-luna-fast"
     },
-    "summary": "Tapped Download for “Listening for Life on Europa.” The download completed, and the episode action now reads “Downloaded.”",
+    "summary": "Downloaded “Listening for Life on Europa”; the episode page now shows the Downloaded state.",
     "startPath": "/episode/deep-space-diaries-100",
     "endPath": "/episode/deep-space-diaries-100",
     "endAnchors": [
@@ -55,7 +55,7 @@
         "name": "Download"
       }
     ],
-    "endWaitMs": 14529,
+    "endWaitMs": 13738,
     "keyedBy": {
       "cacheSchema": "trace-1",
       "policyVersion": "conservative/6",
