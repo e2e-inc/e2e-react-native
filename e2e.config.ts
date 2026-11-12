@@ -25,7 +25,7 @@ export default {
     {
       name: 'ios',
       // CI passes the UDID of a simulator it created on a pinned iOS runtime.
-      engine: mobile({ platform: 'ios', device: process.env.E2E_IOS_DEVICE || 'iPhone 17 Pro' }),
+      engine: mobile({ platform: 'ios', device: process.env.E2E_DEVICE || 'iPhone 17 Pro' }),
       // A development build made with `npx expo run:ios`; Metro serves the JS bundle.
       app: {
         bundleId: 'dev.e2e.podcasts',
